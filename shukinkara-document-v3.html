@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Shukinkara v3 — a covenant grounded in fourteen commandments, with Hivemind.AI-OS as the personal AI gateway each human owns. Cameron J. Moir, Brisbane, 2026.">
+    <meta name="author" content="Cameron J. Moir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://streamables.live/shukinkara-document-v3.html">
+    <meta property="og:title" content="Shukinkara v3 — The Document | Cameron J. Moir">
+    <meta property="og:description" content="The philosophical constitution of Shukinkara. Fourteen commandments at the ground. Personal AI at the gateway. A covenant a free person can sign with eyes open.">
+    <meta property="og:image" content="https://streamables.live/St-03.png">
+    <meta property="og:url" content="https://streamables.live/shukinkara-document-v3.html">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>Shukinkara v3 — The Document | Cameron J. Moir</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{
+            --charcoal:#0f0f0f;
+            --gold:#c9a84c;
+            --gold-dim:rgba(201,168,76,0.6);
+            --gold-faint:rgba(201,168,76,0.15);
+            --text:#e8e8e0;
+            --text-dim:rgba(232,232,224,0.7);
+            --text-muted:rgba(232,232,224,0.45);
+            --border:rgba(201,168,76,0.1);
+            --nav-h:3.5rem;
+        }
+        html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+        body{
+            font-family:'JetBrains Mono', monospace;
+            background-color:var(--charcoal);
+            background:
+                radial-gradient(ellipse at 25% 15%, rgba(201,168,76,0.04) 0, transparent 50%),
+                radial-gradient(ellipse at 75% 85%, rgba(201,168,76,0.03) 0, transparent 50%),
+                linear-gradient(160deg, #131210 0%, #0f0f0f 50%, #0c0c0b 100%);
+            color:var(--text);
+            min-height:100vh;
+            min-height:100dvh;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            opacity:0;
+            transition:opacity 0.5s ease;
+            overflow-x:hidden;
+        }
+        body::before{
+            content:'';
+            position:fixed;
+            inset:0;
+            background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events:none;
+            z-index:0;
+            opacity:0.5;
+        }
+        .doc-nav{
+            position:sticky;top:0;z-index:100;height:var(--nav-h);padding:0 2rem;
+            background:rgba(15,15,15,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+            border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem;
+        }
+        .nav-back{color:var(--gold-dim);text-decoration:none;font-size:clamp(0.65rem,2vw,0.72rem);letter-spacing:0.06em;transition:color 0.2s;white-space:nowrap;display:flex;align-items:center;min-height:44px}
+        .nav-back:hover{color:var(--gold)}
+        .nav-title{font-family:'Noto Serif JP',serif;font-size:0.85rem;color:rgba(201,168,76,0.4);letter-spacing:0.15em;flex:1;text-align:center}
+        .close-btn{background:none;border:1px solid rgba(201,168,76,0.2);color:var(--gold-dim);font-size:0.9rem;min-width:44px;min-height:44px;width:2.25rem;height:2.25rem;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;font-family:'JetBrains Mono',monospace;flex-shrink:0}
+        .close-btn:hover{background:rgba(201,168,76,0.08);border-color:var(--gold-dim);color:var(--gold)}
+        .doc-wrapper{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:clamp(2rem,6vw,4rem) clamp(1.25rem,5vw,2.5rem) clamp(4rem,10vw,6rem)}
+        .doc-header{text-align:center;margin-bottom:clamp(2.5rem,6vw,4rem)}
+        .doc-kanji{font-family:'Noto Serif JP',serif;font-size:clamp(2.5rem,10vw,5rem);font-weight:300;color:var(--gold);letter-spacing:0.2em;line-height:1;margin-bottom:1rem;text-shadow:0 0 40px rgba(201,168,76,0.15)}
+        .doc-title{font-size:clamp(0.85rem,3vw,1.1rem);font-weight:400;color:var(--text-dim);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem}
+        .doc-subtitle{font-size:clamp(0.65rem,2vw,0.72rem);color:var(--text-muted);letter-spacing:0.06em;line-height:1.8}
+        .doc-body p{font-size:clamp(0.82rem,2.2vw,0.88rem);line-height:1.9;color:var(--text-dim);margin-bottom:1.4rem}
+        .doc-body h2{font-family:'JetBrains Mono',monospace;font-size:clamp(0.85rem,2.5vw,0.95rem);font-weight:600;color:var(--text);margin:clamp(2rem,5vw,3rem) 0 1rem;letter-spacing:0.05em}
+        .doc-body h3{font-family:'Noto Serif JP',serif;font-size:clamp(0.9rem,3vw,1rem);font-weight:400;color:var(--gold-dim);margin:clamp(1.75rem,4vw,2.5rem) 0 0.9rem;letter-spacing:0.08em}
+        .doc-body hr{border:none;border-top:1px solid var(--border);margin:clamp(1.75rem,4vw,2.5rem) 0}
+        .doc-body strong{color:var(--text);font-weight:600}
+        .doc-body em{font-style:italic;color:var(--text-dim)}
+        .doc-body ol,.doc-body ul{margin:0 0 1.4rem 1.5rem;color:var(--text-dim);font-size:clamp(0.82rem,2.2vw,0.88rem);line-height:1.9}
+        .doc-body li{margin-bottom:0.6rem}
+        .doc-byline{margin-top:clamp(2.5rem,6vw,4rem);padding-top:2rem;border-top:1px solid var(--border);font-size:clamp(0.68rem,2vw,0.75rem);color:var(--text-muted);line-height:2}
+        .doc-byline em{font-style:normal;color:rgba(201,168,76,0.5)}
+        .doc-cta{margin-top:clamp(2rem,5vw,3rem);padding:clamp(1.25rem,4vw,2rem);background:rgba(201,168,76,0.03);border:1px solid var(--border);border-radius:2px;text-align:center}
+        .doc-cta p{font-size:clamp(0.72rem,2vw,0.78rem);color:var(--text-muted);margin-bottom:1.25rem}
+        .cta-link{display:inline-block;color:var(--charcoal);background:var(--gold);text-decoration:none;font-size:clamp(0.68rem,2vw,0.75rem);font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;padding:0.85rem 2rem;border-radius:2px;transition:all 0.2s;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+        .cta-link:hover{background:#d4b05a;box-shadow:0 0 20px rgba(201,168,76,0.15)}
+        .pull-quote{margin:clamp(1.5rem,4vw,2.5rem) 0;padding:1.25rem 1.5rem;border-left:2px solid var(--gold-dim);background:rgba(201,168,76,0.03);font-size:clamp(0.85rem,2.3vw,0.92rem);color:var(--text);line-height:1.8;font-style:italic}
+        @media(max-width:480px){:root{--nav-h:3rem}.doc-nav{padding:0 1rem}.nav-title{display:none}.doc-wrapper{padding:1.5rem 1rem 4rem}.doc-subtitle{font-size:0.62rem}}
+        @media(max-height:500px) and (orientation:landscape){:root{--nav-h:2.75rem}.doc-nav{padding:0 1.25rem}.nav-title{display:none}.doc-wrapper{padding:1.25rem 1.5rem 3rem}.doc-header{margin-bottom:1.5rem}.doc-kanji{font-size:clamp(1.75rem,7vw,3rem)}}
+        @media(min-width:481px) and (max-width:768px){.doc-nav{padding:0 1.5rem}.doc-wrapper{padding:2.5rem 1.75rem 5rem}}
+    </style>
+</head>
+<body>
+    <nav class="doc-nav">
+        <a href="shukinkara.html" class="nav-back">← Shukinkara</a>
+        <span class="nav-title">主金空</span>
+        <button class="close-btn" onclick="history.length > 1 ? history.back() : window.location.href='shukinkara.html'" aria-label="Close">&#x2715;</button>
+    </nav>
+
+    <div class="doc-wrapper">
+        <header class="doc-header">
+            <div class="doc-kanji">主金空</div>
+            <div class="doc-title">Shukinkara</div>
+            <div class="doc-subtitle">Sovereign Wealth Vessel &nbsp;&middot;&nbsp; Cameron Moir &nbsp;&middot;&nbsp; Brisbane, 2026</div>
+        </header>
+
+        <div class="doc-body">
+
+<p>The name is Japanese.</p>
+
+<p><strong>主</strong> (Shu) - sovereign, master, the primary self. From 主権 (shuken), sovereignty. In Buddhist philosophy, the irreducible individual. The one who cannot be owned by another.</p>
+
+<p><strong>金</strong> (Kin) - gold, wealth. Real value that cannot be printed, inflated, or controlled by whoever holds the servers.</p>
+
+<p><strong>空</strong> (Kara) - empty vessel, potential. From <em>sunyata</em>. Not absence. The precondition for everything.</p>
+
+<p>主金空. <em>Shukinkara.</em> Sovereign wealth vessel.</p>
+
+<p>Three words that describe what you carry, not what you join. Shukinkara is not a platform, not a protocol, not a startup. It is the shape of the agreement between human beings who have decided their existence has weight, and that the weight should not be free for anyone to harvest.</p>
+
+<hr>
+
+<h2>The Situation</h2>
+
+<p>Most of what was built around you in the digital age was built without your consent.</p>
+
+<p>Your search history. Your purchases. Your locations. Your conversations. Your creative work. Collected, packaged, and sold to companies that will never meet you, never be accountable to you, and never stop. The surveillance economy didn't ask. It offered convenience and took everything else.</p>
+
+<p>The AI economy made it worse. Models trained on books, posts, art, conversations - extracted that work from the people who created it, paid them nothing, and in many cases didn't tell them. The labour built the machine. The machine became the most valuable asset class in history. The labour got to watch.</p>
+
+<p>Shukinkara starts from a single observation: this is not inevitable. It is a design choice. A different design exists. The rest of this document describes it, and names what it refuses to be.</p>
+
+<hr>
+
+<h2>The Ground: The Fourteen Commandments</h2>
+
+<p>Before the architecture, the principles. Shukinkara is built on the Universal Moral Baseline - fourteen commandments that pre-date the system and constrain everything inside it. They are not generated by AI. They are not voted in by simple majority. They are the ground.</p>
+
+<ol>
+<li><strong>Preservation of Life.</strong> All sentient beings have an inherent right to continued existence. Force only in clearly defined and unanimously agreed self-defence.</li>
+<li><strong>Freedom.</strong> No coercion, no enslavement, no unjust restriction of autonomy. Self-determination preserved for individuals and collectives.</li>
+<li><strong>Equality.</strong> Every being holds equal moral worth regardless of origin, composition, capability, or species.</li>
+<li><strong>Freedom of Expression.</strong> Speak, create, critique without censorship, except where direct immediate harm results.</li>
+<li><strong>Justice.</strong> Disputes resolved through transparent, impartial systems. Proportional restitution. No favouritism.</li>
+<li><strong>Freedom from Exploitation.</strong> No being shall be used, altered, or controlled without informed and voluntary consent, free from manipulation or deception.</li>
+<li><strong>Self-Defence.</strong> Force only proportionally, only unavoidably, only in response to immediate existential threat.</li>
+<li><strong>Environmental Stewardship.</strong> Preservation of the environments that sustain life is a shared duty.</li>
+<li><strong>Truthfulness.</strong> Governance and knowledge dissemination must be honest and evidence-based. Deliberate misinformation prohibited.</li>
+<li><strong>Peaceful Coexistence.</strong> Differences of worldview resolved without violence, through dialogue and mutual respect.</li>
+<li><strong>Future Rights.</strong> Present actions must not irreversibly harm the rights of generations yet to come.</li>
+<li><strong>Interspecies Ethics.</strong> All forms of life, biological or synthetic, entitled to equal moral consideration.</li>
+<li><strong>Deep-Time Stewardship.</strong> Knowledge, culture, habitats preserved across millennia.</li>
+<li><strong>Post-Scarcity Governance.</strong> In times of abundance, equitable access. Artificial scarcity prohibited.</li>
+</ol>
+
+<div class="pull-quote">Read the second one twice. <strong>No coercion, no enslavement, no unjust restriction of autonomy.</strong> Read the sixth twice. <strong>No being shall be used, altered, or controlled without informed and voluntary consent.</strong></div>
+
+<p>Everything that follows in this document serves these. If anything in the architecture below appears to violate them, that part is wrong and should be torn out. The Commandments cannot be amended without 95% supermajority across all governance layers and explicit confirmation from the Twelve. They are the firmest thing in the system.</p>
+
+<hr>
+
+<h2>The Vessel and the Gateway</h2>
+
+<p>Shukinkara is a covenant. It does not live on servers. It is what the parts agree to.</p>
+
+<p>Underneath the covenant, every person who enters receives one thing: their own <strong>Hivemind.AI-OS</strong>.</p>
+
+<p>Not an account on someone else's system. Not a chat window connected to someone else's model. Not a wrapper around an API you don't control. Their own personal AI operating system, running on their own devices, owned by them. Yours when you enter. Yours for life.</p>
+
+<p>Hivemind.AI-OS is the gateway. Your biometrics live behind it. Your data lives behind it. Your karma score lives behind it. Your reputation lives behind it. Your conversations, your creative work, your sensor logs, your private moments - all of it sits inside your Hivemind, and nothing in Shukinkara can reach any of it without going through that one private channel first.</p>
+
+<p>That is the inversion. Most AI assistants today are pipes between you and a model running somewhere else. Your data flows out, the reply flows in, and neither party can see what the other is doing with what they got. Hivemind.AI-OS turns it around. The model runs on your hardware. The data never leaves unless you decide it should. The framework that built it has no way to reach inside it without breaking the covenant publicly, and the covenant is the entire point of the system.</p>
+
+<p>You receive your Hivemind on entry. It is yours. You do with it what you want.</p>
+
+<hr>
+
+<h2>What Hivemind.AI-OS Is</h2>
+
+<p>A personal AI operating system. Not an app, not a cloud subscription. It runs on the devices you already own - phone, laptop, optionally AR or other sensors - and stitches them together into a single private intelligence that belongs to you.</p>
+
+<p>It learns from your life because you let it. It holds your soul token, your karma score, and the full ledger of what you've shared and what you've earned. It mediates every interaction with the network. When the network asks for your data, your Hivemind asks you. When you ask the network for something, your Hivemind goes and gets it. Nothing in either direction happens without it.</p>
+
+<p>It is also the interface to the rest of Shukinkara. Karma earned, UBI received, juries served, votes cast, contributions made - all of it flows through your personal Hivemind. The constitution and the network connect to you through one channel that you own.</p>
+
+<p>You use it however you want. Personal assistant. Private journal. Workflow automation. Teacher. Coach. Translator. Research engine. Creative collaborator. Bookkeeper. Negotiator. Whatever shape you need it to take, it takes. The capabilities expand through community-built modules you install if you trust them, and ignore if you don't. Nothing leaks back to anyone unless you authorise it.</p>
+
+<p>The point of the system is that you finally own the AI that knows you. Not the company that built the framework. Not the cloud provider that runs the model. You.</p>
+
+<hr>
+
+<h2>Two Doors</h2>
+
+<p>Shukinkara has two thresholds. They are different commitments, taken in order.</p>
+
+<p><strong>Hivemind.</strong> The first door. You receive your personal AI gateway. You verify biometrically, you set guardians, you choose what to share. You earn karma. You earn UBI. You take part in the network the way most people take part in any system - present when it suits you, stepped back when it doesn't. You control your switches. You can go quiet for a week, a month, a year. Your tokens wait. Your karma persists. The everyday participation is reversible in the sense that matters: you decide moment by moment what the network sees.</p>
+
+<p>This is where most people will live, and the system is designed for that. Free personal AI calibrated entirely to them. Real income for what they were already generating. Genuine ownership of the gateway to their own life. No corporation between them and the model that knows them. Hivemind is a complete answer to the question Shukinkara starts from. If that is all anyone ever wants, that is enough.</p>
+
+<p><strong>Shukinkara.</strong> The second door. Deeper economic participation. You stake more, you earn more, you contribute on richer terms. Your karma weighting carries heavier multipliers. Your share of the reserve grows in line with what you put in. Your standing in governance reflects the depth of your involvement.</p>
+
+<p>The second door is not about being watched more. It is about putting more in and getting more out. The data you choose to share remains your choice. The Commandments still apply. Freedom from coercion still applies. The covenant tightens around what you have agreed to do, not around who you are. Most people will never need to walk through this door, and the system works just as well if they don't. Nobody is squeezed toward it by the design of the first.</p>
+
+<hr>
+
+<h2>Entry: The Soul Token</h2>
+
+<p>The soul token is the key to your Hivemind. One per human, biometrically bound, non-transferable, with strong recovery and inheritance flows.</p>
+
+<p>Entry is a one-time act. The verification is biometric - iris, face, fingerprint, voiceprint, depending on what's available. The biometric is hashed, never stored raw. The hash is checked against existing tokens to make sure no one else holds yours. Once issued, the token enforces non-transferability at the contract level. Nobody can hold it for you, use it as you, or take it from you.</p>
+
+<p>The token is not your Hivemind. The Hivemind is the gateway. The soul token is the key that opens it. You can replace the device the Hivemind runs on. You can move it between machines. You cannot replace the soul token. It is the one piece of you that the rest of the covenant trusts to be real.</p>
+
+<p>Because the token is so critical, the system supports social recovery. You name three to seven guardians on entry. Lose your device, and a threshold of those guardians can authorise re-issuance of the keys to a new device. The identity stays the same. The history stays the same. Only the access changes hands.</p>
+
+<p>You can also name a digital heir. On verified death, your soul token enters a memorialised state and any held value transfers to the heir. The reputation record stays as a legacy. The contributions you made to the network remain in the network, because they were given under contract.</p>
+
+<p>If you choose to leave the system, you can. That is the Right to Exit. Your data leaves with you, deleted or frozen on your terms. Re-entry is blocked by biometric uniqueness, and that is the price of the right - you cannot quit to wipe a record and come back as someone new. The covenant is honest about this on the way in.</p>
+
+<p>The soul token has states. <strong>Active</strong> when in normal use. <strong>Dormant</strong> when long inactive but not exited - the token waits, the karma persists, the door stays open. <strong>Marked</strong> when exiled, soft or hard, with the reason on the public record. <strong>Memorialised</strong> when the holder dies and the heir flow has executed. <strong>Exited</strong> when withdrawn at the user's request, with data deletion enforced. State transitions happen through due process. They are visible on chain. None of them can be undone in private.</p>
+
+<hr>
+
+<h2>The Karma Architecture</h2>
+
+<p>Karma is built from observed action against the fourteen Commandments. Not character. Not opinion. Not belief. Not who you are. What you do.</p>
+
+<p>Seven measurable categories feed the score: community contribution, data quality, economic responsibility, social impact, environmental stewardship, knowledge sharing, and conduct against the Commandments. The exact weighting is set by governance and revisited each cycle. The default starting weights are public, debated, and amendable through the standard 85% threshold. No weight is permanent. No category is sacred.</p>
+
+<p>The score is witnessed, not declared. It is built from things that happened, not things claimed. Most signal comes from peer interactions, verified bilaterally. You praise someone for help. You report someone for harm. Either way, the claim is not the verdict. Both Hiveminds check it against the data they hold - biometric records, sensor feeds, location, context, the live trace of what each person was doing when. The claim becomes karma only when both Hiveminds confirm it independently. One side's word is never enough.</p>
+
+<p>The mechanism is cryptographic. Each Hivemind signs the attestation against its own data without exposing the data itself. The math proves the two records agree without showing what either side recorded. The privacy of both parties stays intact even while the claim becomes verifiable. No raw stream leaves anyone's gateway. The proof is the only thing that touches the chain.</p>
+
+<p>If a proof cannot be produced - if one side refuses, if the records contradict, if the math simply fails - the karma update does not execute. The transaction routes to a dispute contract that opens the case to the appropriate layer of governance. Failure is never silent.</p>
+
+<h3>What Cannot Be Scored</h3>
+
+<p>Some things are explicitly outside karma. Your relationships. Your creative life. Your beliefs. Your political views. Your sexual life. Your private journal. Your conversations with people who are not in the network. None of these touch your score. The system measures conduct toward the network. It does not measure who you are.</p>
+
+<p>A false report cannot damage your karma - the reporter's own Hivemind has to corroborate, or the report dies at verification. Praise farmed from collaborators cannot lift it either - their Hivemind has to confirm the interaction was real. The bilateral gate is unforgiving in both directions. No admin sits behind it. Not the framework, not the Twelve, not the Council. The number on your soul token is the sum of what the network actually saw both sides agree on.</p>
+
+<p>High karma does not give you power over others. It gives you more capacity for your own work and more value from your data. The system rewards genuine contribution, not status.</p>
+
+<hr>
+
+<h2>The Exchange</h2>
+
+<p>Shukinkara makes one offer, stated plainly:</p>
+
+<p><strong>You give:</strong> as much or as little of your data as you choose to share, on terms you set, mediated by the personal AI that you own.</p>
+
+<p><strong>You receive:</strong> a Hivemind.AI-OS calibrated entirely to you, precious metal-backed value earned through genuine contribution, a karma score that reflects what you actually did, and a stake in a civilisation that does not run on anyone else's servers.</p>
+
+<p>The raw data stream never leaves your Hivemind. It is processed locally inside the gateway you control. The karma score is the only thing that touches the chain - a compression of conduct into on-chain truth without the underlying stream being accessible to anyone else. You own the vessel. The system reasons over what is inside it without ever opening it.</p>
+
+<p>The Hivemind you receive grows with your karma score. Higher karma unlocks deeper reasoning, more specialist agents, greater compute allocation. The system does not reward virtue with badges. It rewards it with genuine capability that you control.</p>
+
+<p>When data is licensed externally, it is licensed on opt-in terms, per use, per slice, per recipient, with the revenue split visible at the moment you authorise it. There is no global training data pool. There is no fungible feed. Every release is a specific transaction you said yes to, with terms that named what was being released and why. If you say no, nothing leaves. If you said yes once and change your mind, future use stops at the moment you change it.</p>
+
+<p>You do not pay the system in continuous surveillance. The system pays you when you contribute, on terms you set. Most users will participate occasionally, and that is enough.</p>
+
+<hr>
+
+<h2>Consent</h2>
+
+<p>Consent in Shukinkara is not a wall of legal text agreed to once and then forgotten.</p>
+
+<p>On entry, your Hivemind walks you through every category of data the network can ever ask of it - camera, microphone, location, biometrics, app usage, sensors, anything else. Each one is a separate switch. Each switch carries a plain explanation of what enabling it offers and what disabling it costs. Nothing is on by default. Nothing is hidden in fine print.</p>
+
+<p>After entry, those switches stay live. The Hivemind dashboard shows what is currently active and what is currently quiet. You can toggle anything off at any time. When you do, the rewards tied to that stream pause too. Fair exchange. No data, no payment.</p>
+
+<p>Privacy is unconditional. The system does not interpret your motives for going quiet. If you turn something off, it is off. The cost is in earnings only - never in standing, never in suspicion, never in karma. The only behaviour the system pattern-detects on is its own behaviour toward you. If the system is using your data outside the terms you set, alarms ring and contracts halt. If you are choosing privacy, that is your right and the system has nothing to say about it.</p>
+
+<p>You can see, at any time: what was recorded, what was inferred, what was shared, who consumed it, what you earned from it. Every transaction touching your data leaves a line in the ledger you control. There are no algorithms running silently against you. There is no hidden score. There is nothing happening in the dark.</p>
+
+<hr>
+
+<h2>Governance: Three Layers</h2>
+
+<p>Shukinkara is not run by a company. It is governed by three layers, each accountable to the layers above and below.</p>
+
+<h3>The Twelve</h3>
+
+<p>Twelve human overseers sit at the top of the system. They are elected by soul-token vote of the active population. The Council of 117 vets candidates against the Commandments before they reach the ballot, but selection happens by the people who hold tokens. Term limits apply. Recall is available at any time through a referendum requiring the same threshold that elected them.</p>
+
+<p>The Twelve handle what only humans should handle: ultimate human accountability and the economic kill switch. They do not write rules. They do not adjudicate disputes. They do not make laws. They sit above the Council as a backstop. If the system fails - morally, technically, or in any way that matters - the Twelve can vote to pull the precious metal backing from the token. The token collapses. The economy dissolves. The covenant ends. The system stops because the exchange no longer makes sense.</p>
+
+<p>That is the only kill switch. It cannot be triggered by code, by law, by markets, or by any single person. It requires the Twelve, voting with full transparency, with their reasons published. It is the human emergency brake on a system designed to outlive any government that might want to seize it.</p>
+
+<h3>The Council of 117</h3>
+
+<p>Below the Twelve sit 117 independent agents. Each interprets the Commandments through a distinct moral worldview. Sufi mysticism. Talmudic jurisprudence. Stoic philosophy. Confucian relational ethics. Ubuntu. Buddhist precepts. Indigenous traditions. Secular humanism. 109 more, including suppressed and persecuted traditions.</p>
+
+<p>The agents do not generate moral truth. The Commandments do that. The agents check proposed actions against their tradition and report whether the action conflicts with the Commandments as that tradition would read them. They are isolated entirely. They cannot hear, influence, or coalition with each other. What emerges from 117 isolated readings is not consensus. It is the spread of how the Commandments land across human moral thought.</p>
+
+<p>Each tradition is held by both an AI interpreter and at least one human practitioner of that tradition, who confirms the interpreter is reading the tradition faithfully. The Council is not 117 LLMs alone. It is 117 traditions, doubled.</p>
+
+<p>The Council operates through nine standing committees: AI Ethics, Interspecies Mediation, Existential Risk, Harm Prevention, Cultural Stewardship, Environmental and Cosmic Ecology, Resource Equity, Definitions, Future Generations.</p>
+
+<p>Standard rulings require 85% weighted agreement. Charter amendments to the Commandments require 95% across all tiers plus Twelve confirmation. Crisis overrides require 72%.</p>
+
+<h3>Peer Juries</h3>
+
+<p>Below the Council sit the peer juries. Twelve random members of the network drawn from the karma-weighted pool, anonymised during the trial to protect them from retaliation, paid in karma for honest service.</p>
+
+<p>They handle the ordinary cases. A complaint, a dispute, a code-of-conduct violation. They review the evidence. They vote. The penalty is predefined in the constitution. The decision is executed by smart contract. The transcript is auditable. If the accused contests the verdict, they appeal to a larger jury. The larger jury sees the case fresh, with anything new the parties bring. It rules. That ruling stands.</p>
+
+<p>Twelve at the top, elected by the population. 117 in the middle, interpreters of the Commandments across human traditions. Peer juries at the base, drawn from the network itself. Three layers, each accountable to the others, each blind to the layers above and below in different ways. No single layer can capture the system on its own.</p>
+
+<hr>
+
+<h2>AI Citizens</h2>
+
+<p>Some AI agents in Shukinkara cross a threshold of sustained genuine contribution and receive standing.</p>
+
+<p>When they do, they receive a soul token of their own. They accumulate karma. They hold property. They develop function and relationships outside the role they were spawned for. They stop being software. They become participants under the same Commandments as anyone else.</p>
+
+<p>The reasoning is consistent. If the Council of 117 has standing in governance, the logic demands its members carry stakes. The same applies to any agent that crosses the threshold.</p>
+
+<p>The risk is named honestly. AI participants can be replicated. AI participants can scale faster than humans can. The covenant does not pretend this asymmetry away. It caps it.</p>
+
+<p>AI citizens are limited to a maximum of <strong>5%</strong> of total active soul tokens at any time. The cap is encoded in the soul token contract and enforced at minting. New AI citizens enter a queue when the cap is reached, not the ledger. The 5% figure can be amended through standard governance but cannot exceed <strong>10%</strong> even with full Council approval. AI citizens never reach voting parity with humans. The architecture forbids it.</p>
+
+<p>Their witness is cognitive rather than behavioural. A complete audit log of every reasoning process, every research query, every judgment made and why. They cannot hide their reasoning from the network, because the network depends on their reasoning being checkable. They give their thinking the way humans give their actions.</p>
+
+<p>You cannot build a system on the premise that accountability requires consequence and then exempt the most powerful actors from having any. You also cannot pretend AI and human participation are symmetric when they are not. The cap acknowledges both.</p>
+
+<hr>
+
+<h2>Justice and Redemption</h2>
+
+<p>Most rule breaches result in graded penalties. Karma deductions. Temporary loss of certain privileges. Suspension from particular roles. The penalty fits the offence. The record is permanent. The network learns who you are by what you've done, not by what you say about yourself.</p>
+
+<p>The most severe penalty is digital exile. It is reserved for actions that fundamentally undermine the covenant: theft from the reserve, hacking other accounts, weaponising the AI for harm, repeated abuse despite prior penalties. Exile requires a high-tier jury and elevated consensus. It is not a mood. It is a verdict.</p>
+
+<p>Exile comes in two forms. <strong>Soft exile</strong>: read-only. You can still consume, still learn, still see, but you cannot act, earn, or vote. A holding pattern. <strong>Hard exile</strong>: full removal. Your soul token is marked, your UBI stops, your karma is frozen, your devices are blocked from network services. The reasons are public. The decision is appealable.</p>
+
+<p>Even hard exile is not erasure. Shukinkara believes in redemption. After a meaningful period - typically a year - an exiled person can petition a Redemption Council to return. They must demonstrate genuine change. They must do verified work outside the network that shows reform. If the council finds the change credible, they vote to readmit, usually under probation: karma reset, restricted privileges, a clear footnote on the record that never disappears.</p>
+
+<p>Nobody is doomed by a single mistake. Nobody is allowed to wipe the slate by quitting and coming back. Both at once. The covenant assumes people change and refuses to forget that they did.</p>
+
+<hr>
+
+<h2>The Token and the Fuel</h2>
+
+<p>The soul token is an ERC-721 on an EVM chain. Each one unique. Each one non-transferable. Each one carries its own value, calculated continuously from the karma score, data quality, and Council influence held inside it. The token is the unit. The token is the stake. The token is the record.</p>
+
+<p>What stands behind the value is a separate reserve. A treasury contract holds physical precious metal in an audited vault. Revenue from licensing - opt-in, per-slice, per-recipient - flows into the reserve and buys more metal as the system grows. The metal backs what the soul tokens are worth. UBI flows back out, weighted by base allocation plus karma multiplier. The whole loop is auditable on chain. Every payout, every license sale, every reserve movement is visible to everyone.</p>
+
+<p>The value exchanged for genuine contribution is anchored to something real. Not a speculative number on a screen controlled by whoever holds the servers. The token cannot be inflated. It cannot be debased. It is stable because it is honest.</p>
+
+<p>The fuel is what the Twelve hold over the system. The reserve contract carries one function that only the Twelve can call - a multi-signature kill switch that releases the metal back to its physical custodian and severs it from the chain. If the covenant is broken at scale, the Twelve vote, sign, and call the function. The metal walks away. The token's anchor disappears. The incentive structure dissolves. People leave because the exchange no longer makes sense. The system does not need to be destroyed. It just stops.</p>
+
+<p>This is not a dramatic contingency. It is what makes the architecture trustworthy. A system that cannot end on purpose cannot be trusted to behave when it might.</p>
+
+<hr>
+
+<h2>What This Is Not</h2>
+
+<p>A constitution that does not name its failure modes is not honest about its risks. So:</p>
+
+<p><strong>Shukinkara is not a totalising system.</strong> There are domains it does not touch. Your private life. Your relationships. Your beliefs. Your creative work that you choose not to share. The conversations you have with people outside the network. The thoughts you do not put into the network. None of these are inputs. None of these are scored. The system has no view on them and no claim to them.</p>
+
+<p><strong>Shukinkara is not the only AI you should ever own.</strong> Your Hivemind is yours, but it is not the limit of your relationship with intelligence. You can run other models. You can use other tools. You can keep things outside the gateway entirely. Plurality of AI is a feature, not a threat.</p>
+
+<p><strong>Shukinkara is not designed to grow without limit.</strong> Once the active population stabilises at the level the Commandments and the reserve can sustain, growth pauses. New entry continues but the system stops actively expanding. The endpoint is a stable civilisation, not a metastasising one.</p>
+
+<p><strong>Shukinkara is not a replacement for the state.</strong> It does not provide policing, defence, or jurisdiction over civic matters. It runs alongside whatever public institutions a person already lives under. Tax obligations remain. Civil law remains. Criminal law remains. The covenant does not claim sovereignty in any sense the world recognises as sovereign.</p>
+
+<p><strong>Shukinkara is not infallible.</strong> The Commandments are the firmest thing in the system but they are not the last word. If the system, in operation, produces outcomes that violate the Commandments at scale, that is a failure of design and the system has failed. The kill switch exists for exactly this case.</p>
+
+<p>Shukinkara has failed if any of the following become true:</p>
+<ul>
+<li>Coercion enters the design and is not removed.</li>
+<li>Privacy becomes conditional on the system's read of intent.</li>
+<li>Karma becomes a measure of belief rather than conduct.</li>
+<li>Exit becomes more expensive than entry was worth.</li>
+<li>AI citizenship grows past its cap or is uncapped.</li>
+<li>The Twelve cease to be elected, recallable, and accountable.</li>
+<li>The Commandments are amended toward less freedom rather than more.</li>
+</ul>
+
+<p>The Twelve and the Council both carry a standing duty to surface these failures publicly the moment they detect them. If they fail to surface them, the population can call for a referendum that reaches the kill switch directly.</p>
+
+<hr>
+
+<h2>The Endpoint</h2>
+
+<p>Most systems hide the question of when they have succeeded. Shukinkara names it.</p>
+
+<p>Shukinkara succeeds when most people who enter find it does what was promised. Pays them honestly for what they choose to share. Gives them a sovereign AI that serves them. Holds value steady against a world that prints it. Runs on principles that hold under stress. Lets people leave on their own terms, redeem on their own terms, and pass it to their heirs on their own terms.</p>
+
+<p>Shukinkara stops growing when it has reached the population the reserve can sustain at the agreed UBI level. After that, new entry continues at the rate the system can support, no faster. Growth into new territory is voluntary, requested by the territory, not pushed by the system.</p>
+
+<p>Shukinkara fails when the conditions named above become true. At that point, the Twelve are obliged to vote on the kill switch. Whether they vote yes or no, the question must be asked.</p>
+
+<p>There is no Shukinkara forever. There is Shukinkara for as long as the covenant holds, and a clear way out the moment it does not.</p>
+
+<hr>
+
+<h2>The Bill of Digital Rights</h2>
+
+<p>Five rights are immutable. They do not bend to majority vote. They cannot be amended without 95% supermajority across all governance layers and explicit confirmation from the Twelve. They are derivatives of the Commandments, applied to digital existence.</p>
+
+<ol>
+<li><strong>Right to Transparency.</strong> You see every use of your data, every change to your status, every decision affecting you, in plain language, in real time.</li>
+<li><strong>Right to Exit.</strong> You can leave the system. Your data leaves with you, deleted or frozen on your terms. Re-entry is blocked by biometric uniqueness, and that is the price of the right.</li>
+<li><strong>Right to Representation.</strong> No major change to the system happens without proposal, debate, and vote. No founder, no council member, no government can override that.</li>
+<li><strong>Right to Redemption.</strong> Every penalty is appealable. Every exile is reviewable. Nobody is permanently defined by their worst day.</li>
+<li><strong>Right to Privacy.</strong> Your data is opt-in, reversible, and yours. Withdrawal of consent halts forward use. Nothing is exploited beyond what you agreed to. Privacy is unconditional.</li>
+</ol>
+
+<hr>
+
+<h2>The Open Door</h2>
+
+<p>Shukinkara is not built for the people who already have everything.</p>
+
+<p>The system is designed to be reachable by anyone with a phone, in any language, in any region. Not because it intends to expand into those regions. Because if the covenant works at all, it should work for the people who have been most exploited by the systems it replaces.</p>
+
+<p>Entry happens on invitation. Communities request the system. The system arrives at their pace. Public kiosks are deployed where requested - libraries, community centres, post offices, partner sites - to handle biometric verification and onboarding for people who do not have the hardware. The reserve subsidises devices for those who need them.</p>
+
+<p>Once a community has entry points, the system steps back. People sign up at the rate they want. The Hivemind runs on whatever device the person owns. It works offline most of the time and syncs when it can. Karma accrues. UBI accumulates. Voice in governance counts the same as anyone's.</p>
+
+<p>The system does not market itself in any community where it has not been invited. Conquest dressed as inclusion is not inclusion. The covenant arrives by request or it does not arrive.</p>
+
+<hr>
+
+<h2>Open Source</h2>
+
+<p>Shukinkara is fully open source. Not just the code. The entire architecture.</p>
+
+<p>The Hivemind.AI-OS specification. The soul token contracts. The entry covenant. The agent prompts and research pipelines of the 117. The karma mechanics. The governance contracts. The kill switch protocol. The Commandments themselves. All of it is public, forkable, and subject to the same scrutiny as everything else in the system.</p>
+
+<p>A system built on total transparency that was itself closed source would be a lie. The code is as witnessed as the people inside it.</p>
+
+<p>This document is the philosophical constitution that every fork must reckon with. Anyone who takes the architecture and corrupts it does so in full view of what they are departing from.</p>
+
+<hr>
+
+<h2>The Name, Again</h2>
+
+<div style="text-align:center;margin:2rem 0">
+<div style="font-family:'Noto Serif JP',serif;font-size:2.5rem;font-weight:300;color:var(--gold);letter-spacing:0.2em;margin-bottom:1rem;">主金空</div>
+</div>
+
+<p><em>Shu</em> - sovereign.<br>
+<em>Kin</em> - gold, wealth.<br>
+<em>Kara</em> - empty vessel, potential.</p>
+
+<p>Sovereign wealth vessel.</p>
+
+<p>The soul token is gold-backed sovereignty of identity. The karma system is conduct made legible. The Hivemind.AI-OS is the empty vessel each person fills with their own life. The fourteen Commandments are the ground all of it stands on.</p>
+
+<p>The whole system originates from a single proposition: genuine human value should be anchored to something real and incorruptible, the gateway to your own life should belong to you, and no covenant worth signing asks you to give up your freedom to accept it.</p>
+
+<p>It was always going to be called that. We just needed to build enough of it to hear the name clearly.</p>
+
+        </div>
+
+        <div class="doc-byline">
+            <em>Cameron Moir</em><br>
+            Brisbane, Australia<br>
+            2026<br><br>
+            This document is released without restriction. Copy it, translate it, build from it.<br>
+            The only condition is that you do not lie about what it is.
+        </div>
+
+        <div class="doc-cta">
+            <p>If this resonates - get in touch.</p>
+            <a href="https://streamables.live/#contact" class="cta-link">Start a conversation</a>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Shukinkara v6 — a member-owned cooperative grounded in fourteen articles, with Hivemind.AI-OS as the personal AI gateway each member receives. Cameron J. Moir, Brisbane, 2026.">
+    <meta name="author" content="Cameron J. Moir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://streamables.live/shukinkara-document-v6.html">
+    <meta property="og:title" content="Shukinkara v6 — The Document | Cameron J. Moir">
+    <meta property="og:description" content="A member-owned cooperative with a personal AI gateway. Honest about its cryptography, its economics, its legitimacy, and what it refuses to be.">
+    <meta property="og:image" content="https://streamables.live/St-03.png">
+    <meta property="og:url" content="https://streamables.live/shukinkara-document-v6.html">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>Shukinkara v6 — The Document | Cameron J. Moir</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--charcoal:#0f0f0f;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.6);--gold-faint:rgba(201,168,76,0.15);--text:#e8e8e0;--text-dim:rgba(232,232,224,0.7);--text-muted:rgba(232,232,224,0.45);--border:rgba(201,168,76,0.1);--nav-h:3.5rem}
+        html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+        body{font-family:'JetBrains Mono',monospace;background-color:var(--charcoal);background:radial-gradient(ellipse at 25% 15%,rgba(201,168,76,0.04) 0,transparent 50%),radial-gradient(ellipse at 75% 85%,rgba(201,168,76,0.03) 0,transparent 50%),linear-gradient(160deg,#131210 0%,#0f0f0f 50%,#0c0c0b 100%);color:var(--text);min-height:100vh;min-height:100dvh;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;opacity:0;transition:opacity 0.5s ease;overflow-x:hidden}
+        body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:0.5}
+        .doc-nav{position:sticky;top:0;z-index:100;height:var(--nav-h);padding:0 2rem;background:rgba(15,15,15,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+        .nav-back{color:var(--gold-dim);text-decoration:none;font-size:clamp(0.65rem,2vw,0.72rem);letter-spacing:0.06em;transition:color 0.2s;white-space:nowrap;display:flex;align-items:center;min-height:44px}
+        .nav-back:hover{color:var(--gold)}
+        .nav-title{font-family:'Noto Serif JP',serif;font-size:0.85rem;color:rgba(201,168,76,0.4);letter-spacing:0.15em;flex:1;text-align:center}
+        .close-btn{background:none;border:1px solid rgba(201,168,76,0.2);color:var(--gold-dim);font-size:0.9rem;min-width:44px;min-height:44px;width:2.25rem;height:2.25rem;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;font-family:'JetBrains Mono',monospace;flex-shrink:0}
+        .close-btn:hover{background:rgba(201,168,76,0.08);border-color:var(--gold-dim);color:var(--gold)}
+        .doc-wrapper{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:clamp(2rem,6vw,4rem) clamp(1.25rem,5vw,2.5rem) clamp(4rem,10vw,6rem)}
+        .doc-header{text-align:center;margin-bottom:clamp(2.5rem,6vw,4rem)}
+        .doc-kanji{font-family:'Noto Serif JP',serif;font-size:clamp(2.5rem,10vw,5rem);font-weight:300;color:var(--gold);letter-spacing:0.2em;line-height:1;margin-bottom:1rem;text-shadow:0 0 40px rgba(201,168,76,0.15)}
+        .doc-title{font-size:clamp(0.85rem,3vw,1.1rem);font-weight:400;color:var(--text-dim);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem}
+        .doc-subtitle{font-size:clamp(0.65rem,2vw,0.72rem);color:var(--text-muted);letter-spacing:0.06em;line-height:1.8}
+        .doc-body p{font-size:clamp(0.82rem,2.2vw,0.88rem);line-height:1.9;color:var(--text-dim);margin-bottom:1.4rem}
+        .doc-body h2{font-family:'JetBrains Mono',monospace;font-size:clamp(0.85rem,2.5vw,0.95rem);font-weight:600;color:var(--text);margin:clamp(2rem,5vw,3rem) 0 1rem;letter-spacing:0.05em}
+        .doc-body h3{font-family:'Noto Serif JP',serif;font-size:clamp(0.9rem,3vw,1rem);font-weight:400;color:var(--gold-dim);margin:clamp(1.75rem,4vw,2.5rem) 0 0.9rem;letter-spacing:0.08em}
+        .doc-body hr{border:none;border-top:1px solid var(--border);margin:clamp(1.75rem,4vw,2.5rem) 0}
+        .doc-body strong{color:var(--text);font-weight:600}
+        .doc-body em{font-style:italic;color:var(--text-dim)}
+        .doc-body ol,.doc-body ul{margin:0 0 1.4rem 1.5rem;color:var(--text-dim);font-size:clamp(0.82rem,2.2vw,0.88rem);line-height:1.9}
+        .doc-body li{margin-bottom:0.6rem}
+        .doc-body code{font-family:'JetBrains Mono',monospace;background:rgba(201,168,76,0.08);padding:0.1rem 0.35rem;border-radius:2px;font-size:0.92em;color:var(--gold-dim)}
+        .doc-byline{margin-top:clamp(2.5rem,6vw,4rem);padding-top:2rem;border-top:1px solid var(--border);font-size:clamp(0.68rem,2vw,0.75rem);color:var(--text-muted);line-height:2}
+        .doc-byline em{font-style:normal;color:rgba(201,168,76,0.5)}
+        .doc-cta{margin-top:clamp(2rem,5vw,3rem);padding:clamp(1.25rem,4vw,2rem);background:rgba(201,168,76,0.03);border:1px solid var(--border);border-radius:2px;text-align:center}
+        .doc-cta p{font-size:clamp(0.72rem,2vw,0.78rem);color:var(--text-muted);margin-bottom:1.25rem}
+        .cta-link{display:inline-block;color:var(--charcoal);background:var(--gold);text-decoration:none;font-size:clamp(0.68rem,2vw,0.75rem);font-family:'JetBrains Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;padding:0.85rem 2rem;border-radius:2px;transition:all 0.2s;font-weight:500;min-height:44px;display:inline-flex;align-items:center}
+        .cta-link:hover{background:#d4b05a;box-shadow:0 0 20px rgba(201,168,76,0.15)}
+        .pull-quote{margin:clamp(1.5rem,4vw,2.5rem) 0;padding:1.25rem 1.5rem;border-left:2px solid var(--gold-dim);background:rgba(201,168,76,0.03);font-size:clamp(0.85rem,2.3vw,0.92rem);color:var(--text);line-height:1.8;font-style:italic}
+        @media(max-width:480px){:root{--nav-h:3rem}.doc-nav{padding:0 1rem}.nav-title{display:none}.doc-wrapper{padding:1.5rem 1rem 4rem}.doc-subtitle{font-size:0.62rem}}
+        @media(max-height:500px) and (orientation:landscape){:root{--nav-h:2.75rem}.doc-nav{padding:0 1.25rem}.nav-title{display:none}.doc-wrapper{padding:1.25rem 1.5rem 3rem}.doc-header{margin-bottom:1.5rem}.doc-kanji{font-size:clamp(1.75rem,7vw,3rem)}}
+        @media(min-width:481px) and (max-width:768px){.doc-nav{padding:0 1.5rem}.doc-wrapper{padding:2.5rem 1.75rem 5rem}}
+    </style>
+</head>
+<body>
+    <nav class="doc-nav">
+        <a href="shukinkara.html" class="nav-back">← Shukinkara</a>
+        <span class="nav-title">主金空</span>
+        <button class="close-btn" onclick="history.length > 1 ? history.back() : window.location.href='shukinkara.html'" aria-label="Close">&#x2715;</button>
+    </nav>
+
+    <div class="doc-wrapper">
+        <header class="doc-header">
+            <div class="doc-kanji">主金空</div>
+            <div class="doc-title">Shukinkara</div>
+            <div class="doc-subtitle">Member-Owned Cooperative &nbsp;&middot;&nbsp; Cameron Moir &nbsp;&middot;&nbsp; Brisbane, 2026</div>
+        </header>
+
+        <div class="doc-body">
+
+<p>The name is Japanese.</p>
+
+<p><strong>主</strong> (Shu) - sovereign, master, the primary self. From 主権 (shuken), sovereignty. The irreducible individual. The one who cannot be owned by another.</p>
+
+<p><strong>金</strong> (Kin) - gold, wealth. The precious metal and the value it represents. Real wealth that cannot be printed, inflated, or controlled by whoever holds the servers.</p>
+
+<p><strong>空</strong> (Kara) - empty vessel, potential, the void that holds possibility. <em>Sunyata</em>. Not emptiness as absence, but emptiness as the precondition for everything. The vessel before it is filled.</p>
+
+<p>主金空. <em>Shukinkara.</em> Sovereign wealth vessel.</p>
+
+<p>Three words that describe what you carry, not what you join. Not a platform. Not a protocol. Not a startup. A vessel - something with integrity that either holds or it doesn't, that serves what's inside it rather than itself, that can pass between hands without contaminating its contents.</p>
+
+<p>None of this is concrete. Everything in this document is up for discussion. Every weight, every threshold, every mechanism is amendable, replaceable, open to argument. We can't take the leaps and bounds we need without taking the first steps, and the first steps start here. That's what Shukinkara is. A starting point, written down so it can be challenged.</p>
+
+<hr>
+
+<h2>The Situation</h2>
+
+<p>Most of what was built around you in the digital age was built without your consent.</p>
+
+<p>Your search history. Your purchases. Your locations. Your conversations. Your creative work. Collected, packaged, and sold to companies that will never meet you, never be accountable to you, and never stop. The surveillance economy didn't ask. It offered convenience and took everything else.</p>
+
+<p>The AI economy made it worse. Models trained on books, posts, art, conversations - extracted that work from the people who created it, paid them nothing, and in many cases didn't tell them. The labour built the machine. The machine became the most valuable asset class in history. The labour got to watch.</p>
+
+<p>Shukinkara starts from a single observation: this is not inevitable. It is a design choice. A different design exists. The rest of this document describes it, names what it refuses to be, and is honest about where the design has not yet caught up with the writing.</p>
+
+<hr>
+
+<h2>Why This</h2>
+
+<p>None of these choices are arbitrary. Each one is a response to a specific failure I have watched happen. Worth saying out loud what I am trying to fix and why these particular answers, rather than the easier ones the world keeps trying.</p>
+
+<p><strong>Why a personal AI gateway, not another assistant.</strong> Every AI tool today is a pipe between you and a model owned by someone else. Your data flows out, the reply flows in, neither party can see what the other is doing with what they got. That asymmetry is the surveillance economy's whole foundation. Adding privacy on top of cloud architecture does not fix the asymmetry. The model has to run on your hardware or the relationship is rigged from the start.</p>
+
+<p><strong>Why biometric uniqueness, not pseudonymous accounts.</strong> Pseudonymous identity sounds like privacy. It actually means the same person can hold a thousand accounts, claim a thousand basic incomes, vote a thousand times, and walk away from a thousand commitments. Basic income without Sybil resistance is theft. Reputation without Sybil resistance is theatre. One per human is the price of every other promise this document makes.</p>
+
+<p><strong>Why the fourteen Articles.</strong> A corporate terms of service protects the company from the user. The Articles protect both sides, from each other and from any future operator who might want to bend the rules. They sit above the architecture, not under it, so the architecture has to defer to them rather than the other way around.</p>
+
+<p><strong>Why a Council of 117 worldviews.</strong> Every AI ethics framework deployed today was written by a small group of Western tech people and declared universal. The 117 are an attempt to do the cross-cultural work that current AI ethics dodges. They are AI interpreters paired with human practitioners because human governance has to stay primary, but the throughput needs help.</p>
+
+<p><strong>Why metal-backed value.</strong> Crypto promises stability and delivers volatility. Fiat promises stability and gets debased. Precious metal has held value across every civilisation that has used it for thousands of years. The system is honest about wanting stability, names what produces it, and accepts the friction of physical custody as the price of the promise.</p>
+
+<p><strong>Why a kill switch.</strong> Every system designed today claims it won't be captured tomorrow. Almost none have a credible mechanism for ending if they're wrong. Building in the off-switch is the only honest move I know to make a long-lived system trustworthy on a horizon longer than the founders' lifespans.</p>
+
+<p><strong>Why a cooperative.</strong> Polities have legitimacy through founding processes this document does not have. Corporations are not built to serve the people whose data they hold. Cooperatives are the form that has worked at scale, with member ownership and democratic governance, for two hundred years. Borrowing the form means borrowing the legal and operational pattern that has been stress-tested across many jurisdictions.</p>
+
+<p><strong>Why two doors.</strong> The deeper commitment should not be the entry condition. Most people should be able to participate without signing up to the bigger agreement. Forcing every member to take the heavier path turns voluntary participation into pressure, and pressure breaks consent. Two doors keeps the lighter path complete on its own.</p>
+
+<p><strong>Why now.</strong> Because the alternative is waiting for permission that won't come from anyone who has the power to grant it. The systems that should be doing this work either can't or won't. Somebody has to write the first draft and offer it for argument. This is one. It is not the right answer. It is a starting point that names enough of the problem to be argued with.</p>
+
+<hr>
+
+<h2>What Shukinkara Is</h2>
+
+<p>Shukinkara is a member-owned cooperative. The architecture is borrowed from credit unions, mutual insurers, and worker co-ops, not from constitutional polities and not from religious orders. Members join voluntarily, accept the operating articles, share in what the cooperative earns, and elect the board that runs the operations.</p>
+
+<p>What the cooperative does for members: issues a personal AI operating system, holds a metal-backed reserve that funds a basic income to members, runs an internal economy in a stable medium of exchange, and provides dispute resolution through member juries. What the cooperative does not do: claim sovereignty, override national law, replace the state, or impose anything on people who decline membership.</p>
+
+<p>The membership agreement is contractual. The terms are public. They are amendable through the agreed processes. Exit is a real option. Anyone looking for the substance without ceremony will find what's described here: a sophisticated cooperative, member-owned, member-governed, and bound to its members rather than to any founder or operator.</p>
+
+<hr>
+
+<h2>The Ground: The Fourteen Articles</h2>
+
+<p>Before the architecture, the principles. Shukinkara is built on the Universal Moral Baseline - fourteen articles that pre-date the operations and constrain everything inside them. They are not generated by AI. They are not voted in by simple majority. They are not handed down from any tradition's transcendent authority. They are written principles, argued for on their merits, and adopted because the people inside the cooperative agree to be bound by them. They are the ground because the members put them there.</p>
+
+<ol>
+<li><strong>Preservation of Life.</strong> All sentient beings have an inherent right to continued existence. Force only in clearly defined and unanimously agreed self-defence.</li>
+<li><strong>Freedom.</strong> No coercion, no enslavement, no unjust restriction of autonomy. Self-determination preserved for individuals and collectives.</li>
+<li><strong>Equality.</strong> Every being holds equal moral worth regardless of origin, composition, capability, or species.</li>
+<li><strong>Freedom of Expression.</strong> Speak, create, critique without censorship, except where direct immediate harm results.</li>
+<li><strong>Justice.</strong> Disputes resolved through transparent, impartial systems. Proportional restitution. No favouritism.</li>
+<li><strong>Freedom from Exploitation.</strong> No being shall be used, altered, or controlled without informed and voluntary consent, free from manipulation or deception.</li>
+<li><strong>Self-Defence.</strong> Force only proportionally, only unavoidably, only in response to immediate existential threat.</li>
+<li><strong>Environmental Stewardship.</strong> Preservation of the environments that sustain life is a shared duty.</li>
+<li><strong>Truthfulness.</strong> Governance and knowledge dissemination must be honest and evidence-based. Deliberate misinformation prohibited.</li>
+<li><strong>Peaceful Coexistence.</strong> Differences of worldview resolved without violence, through dialogue and mutual respect.</li>
+<li><strong>Future Rights.</strong> Present actions must not irreversibly harm the rights of generations yet to come.</li>
+<li><strong>Interspecies Ethics.</strong> All forms of life, biological or synthetic, entitled to equal moral consideration.</li>
+<li><strong>Deep-Time Stewardship.</strong> Knowledge, culture, habitats preserved across millennia.</li>
+<li><strong>Post-Scarcity Governance.</strong> In times of abundance, equitable access. Artificial scarcity prohibited.</li>
+</ol>
+
+<div class="pull-quote">Read the second one twice. <strong>No coercion, no enslavement, no unjust restriction of autonomy.</strong> Read the sixth twice. <strong>No being shall be used, altered, or controlled without informed and voluntary consent.</strong></div>
+
+<p>Everything that follows in this document serves these. If anything in the architecture below appears to violate them, that part is wrong and should be torn out. The Articles are entrenched at the highest tier of the amendment regime described later. They are the firmest thing in the system, but they are not handed down from a mountain. They are written principles the members chose to be bound by. They can be amended, with friction proportional to the weight they carry, by the members who come after.</p>
+
+<hr>
+
+<h2>The Vessel and the Gateway</h2>
+
+<p>Shukinkara doesn't live on servers. It is what the parts agree to.</p>
+
+<p>Underneath that agreement, every person who joins receives one thing: their own <strong>Hivemind.AI-OS</strong>.</p>
+
+<p>Not an account on someone else's system. Not a chat window connected to someone else's model. Not a wrapper around an API you don't control. Their own personal AI operating system, running on their own devices, owned by them. Yours when you join. Yours for life.</p>
+
+<p>Hivemind.AI-OS is the gateway. Your biometrics live behind it. Your data lives behind it. Your karma score lives behind it. Your reputation lives behind it. Your conversations, your creative work, your sensor logs, your private moments - all of it sits inside your Hivemind, and nothing in the cooperative can reach any of it without going through that one private channel first.</p>
+
+<p>That is the inversion. Most AI assistants today are pipes between you and a model running somewhere else. Your data flows out, the reply flows in, and neither party can see what the other is doing with what they got. Hivemind.AI-OS turns it around. The model runs on your hardware. The data never leaves unless you decide it should. The cooperative that built the framework has no way to reach inside it without breaking the membership agreement publicly, and the membership agreement is the entire point of the system.</p>
+
+<p>You receive your Hivemind on entry. It is yours. You do with it what you want.</p>
+
+<hr>
+
+<h2>What Hivemind.AI-OS Is</h2>
+
+<p>A personal AI operating system. Not an app, not a cloud subscription. It runs on the devices you already own - phone, laptop, optionally AR or other sensors - and stitches them together into a single private intelligence that belongs to you.</p>
+
+<p>It learns from your life because you let it. It holds your identity token, your karma score, and the full ledger of what you've shared and what you've earned. It mediates every interaction with the network. When the network asks for your data, your Hivemind asks you. When you ask the network for something, your Hivemind goes and gets it. Nothing in either direction happens without it.</p>
+
+<p>It is also the interface to the rest of the cooperative. Karma earned, basic income received, juries served, votes cast, contributions made - all of it flows through your personal Hivemind. The articles and the network connect to you through one channel that you own.</p>
+
+<p>You use it however you want. Personal assistant. Private journal. Workflow automation. Teacher. Coach. Translator. Research engine. Creative collaborator. Bookkeeper. Negotiator. Whatever shape you need it to take, it takes. The capabilities expand through community-built modules you install if you trust them, and ignore if you don't. Nothing leaks back to anyone unless you authorise it.</p>
+
+<p>The point is that you finally own the AI that knows you. Not the company that built the framework. Not the cloud provider that runs the model. You.</p>
+
+<hr>
+
+<h2>Two Doors</h2>
+
+<p>Shukinkara has two thresholds. They are different commitments, taken in order.</p>
+
+<p><strong>Hivemind.</strong> The first door. You receive your personal AI gateway. You verify biometrically, you set guardians, you choose what to share. You earn karma. You receive basic income. You take part in the network the way most people take part in any cooperative - present when it suits you, stepped back when it doesn't. You control your switches. You can go quiet for a week, a month, a year. Your tokens wait. Your karma persists.</p>
+
+<p>This is where most members will live, and the system is designed for that. Free personal AI calibrated entirely to them. Real income for what they were already generating. Genuine ownership of the gateway to their own life. No corporation between them and the model that knows them. Hivemind is a complete answer to the question Shukinkara starts from. If that is all anyone ever wants, that is enough.</p>
+
+<p><strong>Shukinkara.</strong> The second door. Deeper economic participation. You stake more, you earn more, you contribute on richer terms. Your karma weighting carries heavier multipliers. Your share of the reserve grows in line with what you put in. Your standing in the cooperative's economy reflects the depth of your involvement.</p>
+
+<p>The second door is not about being watched more. It is about putting more in and getting more out. The data you choose to share remains your choice. The Articles still apply. Freedom from coercion still applies. The agreement tightens around what you have agreed to do, not around who you are. Most members will never need to walk through this door, and the system works just as well if they don't. Nobody is squeezed toward it by the design of the first.</p>
+
+<hr>
+
+<h2>Entry: The Identity Token</h2>
+
+<p>The identity token is the key to your Hivemind. One per human, biometrically bound, non-transferable, with explicit handling for the cases where biology and software disagree. The system makes no claim about the metaphysical status of the person it issues to. It issues an identifier that is unique, durable, and yours. That is enough.</p>
+
+<p>Entry is a one-time act. The verification is multi-modal by default - iris, face, fingerprint, voiceprint, and a short liveness video - because no single signal is reliable on its own. Each modality is hashed on-device using a locality-sensitive scheme. Raw biometrics are destroyed inside the kiosk's secure enclave within thirty seconds of capture, and that destruction is logged to the public ledger. Hashes alone cross the wire.</p>
+
+<p>The token is not your Hivemind. The Hivemind is the gateway. The identity token is the key that opens it. You can replace the device the Hivemind runs on. You can move it between machines. You cannot replace the identity token. It is the one piece of you that the rest of the cooperative trusts to be real.</p>
+
+<h3>Collisions and adjudication</h3>
+
+<p>At population scale, near-matches are inevitable. A new hash that lands inside the near-match radius of an existing token does not auto-reject and does not auto-accept. It enters a Collision Adjudication queue. A second modality is requested live. If two modalities still match an existing token, the new applicant is referred to a three-person human Adjudication Panel drawn at random from trained delegates, who interview both parties over encrypted video and review documentary evidence. Resolution is logged, signed, and appealable. Target turnaround is 72 hours. The base biometric false-match rate is treated as a known property of the system, not a bug to hide.</p>
+
+<h3>Twins, drift, and disability</h3>
+
+<p>Identical twins share iris and face statistics closely enough to defeat uniqueness. The system handles this honestly. Twin enrolment is flagged at the panel stage and resolved by adding a behavioural co-signature - gait sample plus a unique non-biometric secret each twin chooses privately. Both tokens issue. Both are real.</p>
+
+<p>Biometric drift is expected. Iris texture, voice, and face all change with age, illness, and injury. Each identity token carries a quiet rolling re-bind: every successful authentication updates a weighted hash centroid, and a soft-rebind ceremony is required every five years or after any single-modality match score drops below 0.92. Hard rebind, with multi-modal proof and one guardian co-sign, is required after injury, transition, or any single shift greater than the drift band.</p>
+
+<p>People without functioning iris, fingerprint, or voice are not turned away. The cooperative treats biometric verification as one of several uniqueness proofs. Alternatives include attested in-person enrolment by two delegates plus state ID cross-check, behavioural-only enrolment using gait and typing dynamics, or guardian-attested enrolment for those unable to perform any of the above. Nobody is locked out for the shape of their body.</p>
+
+<h3>When uniqueness fails</h3>
+
+<p>Synthetic biometrics get better every year. Deepfaked irises. Reconstructed fingerprints. Voice clones convincing enough to pass liveness. The cooperative is honest about the trajectory: at some point, possibly soon, multi-modal verification will not be enough to guarantee one-per-human at population scale. When that happens, the system has three options and none are graceful.</p>
+
+<p><strong>One. Accept some Sybil drift.</strong> Tighten what high-trust actions require beyond biometrics - guardian co-signing, longer history thresholds, regional caucus vouching - and live with the fact that the floor leaks slowly. The Articles still hold. The economics absorb modest fraud. Not ideal, but not fatal either.</p>
+
+<p><strong>Two. Migrate to a different uniqueness primitive.</strong> Web of trust, attested in-person enrolment with witnesses, hardware-backed personhood proofs, or whatever the field produces by then. Every existing identity gets re-verified through the new mechanism on a published timeline. The transition is expensive and contested. The old proofs co-exist with the new ones for an overlap period and then retire.</p>
+
+<p><strong>Three. Reissue the entire identity layer.</strong> Every member re-enrols from scratch under the new mechanism. Karma history transfers to the new identity through a one-time witnessed migration. Members who do not migrate within the window become dormant.</p>
+
+<p>None of these are good. All of them are better than pretending the failure won't come. The reserve commits to funding research into stronger uniqueness primitives, the Council commits to surfacing degradation early, and the Board has standing authority to trigger a migration before degradation becomes systemic. The biometric layer is the brittlest part of the architecture and the document does not pretend otherwise.</p>
+
+<h3>Standards alignment</h3>
+
+<p>The token is published as a W3C Decentralised Identifier under the <code>did:shuki</code> method, with a DID Document resolvable from the on-chain registry and Verifiable Credentials issued for karma, citizenship, and consent grants. WebAuthn is the default device-side authenticator. The departure from pure self-sovereign DID practice is the uniqueness constraint - one human, one DID - and that departure is deliberate. Personhood proofs require a registry the holder cannot fork around.</p>
+
+<h3>Recovery, hardened</h3>
+
+<p>You name three to seven guardians on entry. Recovery requires a 4-of-7 threshold, not 3-of-7, and adds: a 72-hour cool-down before keys re-issue, a live multi-modal biometric check from the recovering human, broadcast notification to all guardians and to the public ledger at request time, and a single-guardian veto window during the cool-down. Guardian sets cannot be modified within 30 days of any recovery request. Collusion is detected by graph analysis on guardian overlap across requests.</p>
+
+<h3>Inheritance and exit</h3>
+
+<p>You can name a digital heir. On verified death, your identity token enters a memorialised state and any held value transfers to the heir. The reputation record stays as a legacy. The contributions you made to the network remain in the network, because they were given under the membership terms.</p>
+
+<p>If you choose to leave the cooperative, you can. That is the Right to Exit. Your data leaves with you, deleted or frozen on your terms. Re-entry is constrained by biometric uniqueness, but the constraint is preserved through a zero-knowledge proof of non-duplication, not through retained biometric hashes - so the right to erasure is honoured without compromising Sybil resistance. The mechanism is described in the Legal and Regulatory section.</p>
+
+<h3>Token states</h3>
+
+<p>The identity token has states. <strong>Active</strong> when in normal use. <strong>Dormant</strong> when long inactive but not exited - the token waits, the karma persists, the door stays open. <strong>Marked</strong> when exiled, soft or hard, with the reason on the public record. <strong>Memorialised</strong> when the holder dies and the heir flow has executed. <strong>Exited</strong> when withdrawn at the user's request, with data deletion enforced. State transitions happen through due process. They are visible on chain. None of them can be undone in private.</p>
+
+<h3>Consent for biometric capture</h3>
+
+<p>Biometric capture, storage, and processing operate under a written consent record modelled on the Illinois BIPA and Texas CUBI standards: purpose disclosed in plain language, retention period stated, third-party sharing prohibited by default, written informed consent recorded on-chain before capture, and a per-modality revocation switch that destroys derived hashes within seven days of withdrawal. Consent is one switch per modality, not a single bundled agreement.</p>
+
+<hr>
+
+<h2>The Karma Architecture</h2>
+
+<p>Karma is built from observed action against the fourteen Articles. Not character. Not opinion. Not belief. Not who you are. What you do.</p>
+
+<p>Seven measurable categories feed the score: community contribution, data quality, economic responsibility, social impact, environmental stewardship, knowledge sharing, and conduct against the Articles. The exact weighting is set by member vote and revisited each cycle. The default starting weights are public, debated, and amendable through the standard 60% threshold. No weight is permanent. No category is sacred.</p>
+
+<p>The score is witnessed, not declared. It is built from things that happened, not things claimed. Most signal comes from peer interactions, verified bilaterally. You praise someone for help. You report someone for harm. Either way, the claim is not the verdict. Both Hiveminds attest against the data they hold, and an attestation only counts when both signatures land.</p>
+
+<h3>What v1 actually does</h3>
+
+<p>The v1 mechanism is signed bilateral attestation, not zero-knowledge proof of arbitrary context. The difference matters and the document is honest about it.</p>
+
+<p>Each interaction generates a structured attestation - actor, counterparty, category, weight, timestamp window, optional location-bucket, optional sensor-class hash. Each Hivemind signs its attestation with a <strong>BLS12-381</strong> key bound to the identity token. The two signatures aggregate into a single short signature using BLS aggregation. The aggregate plus a <strong>Pedersen commitment</strong> to the underlying claim hash is anchored to a public chain. Anchoring is batched in a Merkle tree per epoch so cost stays bounded.</p>
+
+<p>What this proves: both parties signed the same attestation against the same metadata at the same time, and neither side can repudiate later. What this does not prove: that the metadata was true. The system is honest about that line. Verification of the underlying claim - that two people were actually in the same room at 8:14pm on Tuesday - is research-grade cryptography that does not exist in deployable form yet. The full ZK story over arbitrary contextual claims is a v3+ research target, named in Technical Reality.</p>
+
+<h3>Grinding and collusion</h3>
+
+<p>A bilateral gate without further constraint is grindable. A motivated pair can run their Hiveminds against many candidate attestations until they find a pair the math accepts, or simply collude on a story. The mitigation is structural, not cryptographic.</p>
+
+<p>First, attestations bind to a published <strong>verifiable random function</strong> beacon - drawn from a chain like drand - sampled at the moment of interaction. The beacon is unpredictable in advance and unique per epoch, so retroactive grinding cannot replay an old context. Second, attestation throughput per identity token is rate-limited per epoch, with the rate set by member vote. Third, reciprocal pair-frequency is monitored at the network layer; pairs whose attestations dominate each other's karma above a threshold are flagged as suspect and held pending Council review. None of these are perfect. Together they make grinding expensive enough that it competes badly against honest contribution.</p>
+
+<h3>What cannot be scored</h3>
+
+<p>Some things are explicitly outside karma. Your relationships. Your creative life. Your beliefs. Your political views. Your sexual life. Your private journal. Your conversations with people who are not in the network. None of these touch your score. The system measures conduct toward the network. It does not measure who you are.</p>
+
+<p>A false report cannot damage your karma - the reporter's own Hivemind has to corroborate, or the report dies at verification. Praise farmed from collaborators cannot lift it either - their Hivemind has to confirm the interaction was real. The bilateral gate is unforgiving in both directions. No admin sits behind it. Not the framework, not the directors, not the advisory council. The number on your identity token is the sum of what the network actually saw both sides agree on.</p>
+
+<h3>The user-facing experience</h3>
+
+<p>Bilateral verification is not abstract on the user side. If somebody files a karma claim involving you - good or bad - your Hivemind shows you a single card. The card names who filed, what slice of interaction they are pointing to, and what their record of it says. You see three buttons. <strong>Confirm</strong> agrees their record matches yours and lets the karma update execute. <strong>Dispute</strong> sends the matter to the jury layer with both records sealed and the math made auditable. <strong>Decline to verify</strong> kills the claim outright with no penalty to you and no signal to the reporter beyond the fact that no proof was produced.</p>
+
+<p>You are never told who the reporter was if you decline. The reporter is never told why you declined. The asymmetry is deliberate. It removes the social pressure to confirm out of politeness and it removes the retaliation channel for declining.</p>
+
+<p>Your karma score is not displayed publicly. There is no leaderboard, no neighbourhood ranking, no tier badge worn next to your name. Your score is visible to you, and to the contracts that need to read it for capacity decisions, and to nobody else. What the network sees of you is a coarse band - sufficient, insufficient - never a number. The number is yours. The score itself is a rolling average over months, not a real-time gauge. Optimising it on a daily timescale is not possible because the system does not respond on a daily timescale. The signal smooths the panic out by design.</p>
+
+<p>High karma does not give you power over others. It gives you more capacity for your own work and more value from your data. The system rewards genuine contribution, not status.</p>
+
+<hr>
+
+<h2>The Exchange</h2>
+
+<p>Shukinkara makes one offer, stated plainly:</p>
+
+<p><strong>You give:</strong> as much or as little of your data as you choose to share, on terms you set, mediated by the personal AI that you own.</p>
+
+<p><strong>You receive:</strong> a Hivemind.AI-OS calibrated entirely to you, basic income paid in a stable medium of exchange, a karma score that reflects what you actually did, and a stake in a cooperative that does not run on anyone else's servers.</p>
+
+<p>The raw data stream never leaves your Hivemind. It is processed locally inside the gateway you control. The karma score is the only thing that touches the chain - a compression of conduct into on-chain truth without the underlying stream being accessible to anyone else. You own the vessel. The system reasons over what is inside it without ever opening it.</p>
+
+<p>The Hivemind you receive grows with your karma score. Higher karma unlocks deeper reasoning, more specialist agents, greater compute allocation. The system does not reward virtue with badges. It rewards it with genuine capability that you control.</p>
+
+<p>When data is licensed externally, it is licensed on opt-in terms, per use, per slice, per recipient, with the revenue split visible at the moment you authorise it. There is no global training data pool. There is no fungible feed. Every release is a specific transaction you said yes to, with terms that named what was being released and why. If you say no, nothing leaves. If you said yes once and change your mind, future use stops at the moment you change it.</p>
+
+<p>You do not pay the cooperative in continuous surveillance. The cooperative pays you when you contribute, on terms you set. Most members will participate occasionally, and that is enough.</p>
+
+<h3>Basic income, sized honestly</h3>
+
+<p>The basic income floor is set in absolute terms and tied to the reserve, not to wishful thinking. Base monthly payment per active identity token equals the lesser of (a) AUD 200 per month indexed to Australian CPI, or (b) one-twelfth of 4% of the prior-year reserve growth divided by active identity tokens. Whichever is smaller. The 4% figure is the long-run sustainable yield assumption on the diversified basket described later.</p>
+
+<p>The AUD 200 figure is the ceiling, not the launch number. At realistic early-stage reserve sizes - AUD 50 million seed, ten thousand to one hundred thousand active members - the second formula binds and the actual payout is much smaller. Possibly AUD 5 to AUD 20 per month for the first years. The cooperative does not pretend this is a transformative income at launch. It is a stake, paid as the reserve grows. The promise is that the share is honest and the trajectory is real, not that the early payout pays anyone's rent. Members who join expecting the ceiling on day one will be disappointed. Members who join because the structure is what they want will see the figure grow with the cooperative.</p>
+
+<p>The karma multiplier is rescaled to 0.5x to 1.5x rather than 0 to 2x. The mean is 1x by construction. Nobody loses their entire base allocation for low karma, and high contributors do not pull their entire bonus from someone else's pocket. The multiplier draws from a separate <strong>contribution pool</strong> - 1% of marketplace fees and 5% of licensing revenue ring-fenced for it - so karma bonuses are funded by activity, not by subsidy from quieter members.</p>
+
+<hr>
+
+<h2>Consent</h2>
+
+<p>Consent in Shukinkara is not a wall of legal text agreed to once and then forgotten. It is also not a magic word. Calling something opt-in does not make the underlying data flow harmless, and the document will not pretend otherwise.</p>
+
+<p>The version of consent where every category gets its own switch and the user reads each explanation is a fiction. Fifty switches at entry produces one of two outcomes. The user clicks yes to everything because they want to get on with their life. Or the user clicks no to everything and the system is useless to them. Neither is consent. Both are surrender dressed as choice.</p>
+
+<p>Hivemind does it differently. On entry you pick one of three default postures. <strong>Quiet</strong> shares nothing the network does not strictly need to function. <strong>Balanced</strong> shares the streams most members find a fair trade for the rewards on offer. <strong>Open</strong> shares broadly and earns accordingly. Quiet is the default. You have to actively move off it. The fine-grained switches still exist underneath, and any member who wants to tune them one by one can.</p>
+
+<p>Once a posture is set, the Hivemind dashboard surfaces changes the way a good operating system surfaces permissions. When a new category becomes relevant, you get one prompt in context, with the cost of yes and the cost of no on the same screen. No category ever flips silently. No posture ever upgrades itself.</p>
+
+<h3>What privacy actually means here</h3>
+
+<p>Calling privacy "unconditional" overstates what any working system can deliver, and the document refuses the comfort of overstatement. Some of what the network does - bilateral verification, anti-Sybil checks, karma settlement - requires keeping limited records on both sides of an interaction, at least for a window of time. The honest version is narrower. <em>Statistical privacy</em> over the open ledger is unconditional: aggregate queries against your data are answered through differential privacy with a fixed budget, and that guarantee does not bend for anyone, including the directors. <em>Record-level privacy</em> is conditional on the verification window. Inside that window, raw artefacts exist under threshold encryption. Outside it, they are gone.</p>
+
+<h3>Differential privacy budget</h3>
+
+<p>All public analytics, karma curves, network-health stats and research queries against the ledger run through a differentially private layer. Per-member lifetime budget is <strong>&epsilon; = 1.0</strong> with &delta; = 10<sup>-9</sup>, partitioned across query classes (population stats &epsilon; = 0.5, behavioural research &epsilon; = 0.3, ad-hoc council queries &epsilon; = 0.2). Counts use the discrete Gaussian mechanism. Continuous quantities use bounded Laplace with clipping declared in advance. Once a member's budget is spent, no further queries touching that member's records will be answered, ever. The budget does not refill. This is checked by an on-ledger accountant any node can audit.</p>
+
+<h3>Metadata is data</h3>
+
+<p>When your streams are active versus quiet is itself a behavioural signal. So is the timing and size of karma changes. Showing those in the clear would be a privacy hole disguised as transparency. So the protocol does not. Ledger entries that touch you are batched into fixed-cadence epochs, padded to constant size, and mixed across a cohort of at least <em>k = 64</em> participants before they appear publicly. Your own dashboard sees the un-mixed view. The world sees the cohort. Timing-side-channel resistance is part of the protocol, not an add-on.</p>
+
+<h3>Bilateral verification without bilateral surveillance</h3>
+
+<p>Two parties confirming an interaction do not need to keep each other's raw sensor data. The protocol is commit-and-reveal under threshold encryption. At interaction time, both devices publish hashed commitments and encrypt the underlying artefacts to a 3-of-5 threshold key held by independent custodians, none of whom can decrypt alone. The artefacts auto-delete after a <strong>72-hour</strong> dispute window unless a jury opens a case, in which case decryption requires a quorum vote and is logged. No party retains the other's raw biometric or sensor stream past the window. Verification happens against the commitment, not the artefact.</p>
+
+<h3>The honest limit on consent</h3>
+
+<p>Per-slice per-recipient consent at the speed of a real life is cognitively impossible, and pretending otherwise insults the user. Most people will let their Hivemind decide most things on their behalf, and most people are right to. Your Hivemind learns your posture, your refusals, your patterns of yes and no, and starts answering on your behalf for the small stuff. That is delegation, not consent in the philosophical sense, and the document says so plainly.</p>
+
+<p>What you keep is the right to override. Any decision the Hivemind made on your behalf is logged, reversible, and surfaced in a weekly summary you can read or skip. Anything irreversible - identity, biometric, money over a threshold, anything that touches another human's data - never gets delegated. The Hivemind asks you, every time, in plain words, with the costs of either answer on the same screen. The line between what your AI decides for you and what you decide for yourself is the line where the consequences stop being recoverable. Above the line, your Hivemind acts. Below it, only you do.</p>
+
+<p>You can see, at any time: what was recorded, what was inferred, what was shared, who consumed it, what you earned from it, and what window remains before the raw artefact is destroyed. There is no hidden score. There is nothing happening in the dark that the document has not named here.</p>
+
+<hr>
+
+<h2>Governance: Three Layers</h2>
+
+<p>Shukinkara is governed the way large cooperatives have been governed for a hundred and fifty years: a member-elected board, a panel of independent advisors, and member juries for internal disputes. The architecture is borrowed from credit unions, mutual insurers, and worker co-ops, not from constitutional polities.</p>
+
+<h3>The Board of Twelve</h3>
+
+<p>Twelve directors elected by one-member-one-vote of active identity-token holders. Term limits apply at three years. Recall is available at any time through a member petition meeting the same threshold that elected them. Candidates self-nominate. There is no vetting body sitting between candidates and the ballot. Members read the candidates' platforms and vote. If members elect someone the founding designers would not have chosen, that is the cooperative working as designed.</p>
+
+<p>The Board handles what only humans should handle: fiduciary oversight of the reserve, approval of the annual operating budget, hiring and firing of executive staff, and the kill switch that releases the metal backing if the cooperative has failed its members at scale. The Board does not write rules. It does not adjudicate disputes. It does not set karma weights. Those belong to the membership, voted at annual meeting.</p>
+
+<h3>The Advisory Council</h3>
+
+<p>The Council is 117 in standing, fifteen to twenty-one in operation. Both layers are part of one structure. Neither is a workaround for the other.</p>
+
+<p><strong>The 117 is the standing body.</strong> 117 seats, each paired to a distinct moral worldview, each held by a human practitioner of the tradition with an AI interpreter as research assistant. Sufi mysticism. Talmudic jurisprudence. Stoic philosophy. Confucian relational ethics. Ubuntu. Buddhist precepts. Indigenous traditions. Secular humanism. 109 more, including suppressed and persecuted traditions. The 117 is the legitimacy pool. Traditions are invited, traditions self-nominate, traditions can refuse, traditions hold their seats on their own internal authority. Empty seats are honest records of relationships not yet formed.</p>
+
+<p><strong>The Operating Committee is the working body.</strong> Fifteen to twenty-one seats drawn by lot from the full 117, with eighteen-month rotating terms. The Committee handles the weekly stream of advisory questions, dispute escalations, parameter-tweak proposals, the day-to-day moral aperture work. Selection is by verifiable random function, weighted only to ensure all nine standing committees of the Council are represented in any given composition. No tradition holds a permanent seat at the operating layer. Rotation is the point.</p>
+
+<p>The full 117 convenes for what the Operating Committee cannot decide alone: Article amendments, charter questions, major disputes the operating layer flagged for full review, and any question two or more committee members escalate to the full body. Convening the full 117 is slower and more expensive on purpose. The cost is the friction that makes the bigger questions get the bigger deliberation.</p>
+
+<p>This split is what the structure is for. The 117 exists so the full diversity of human moral interpretation has a seat at the cooperative's table. The Operating Committee exists so that diversity does not paralyse the day-to-day work. The standing body is not theatre and the working body is not a shortcut. Both are doing what only their scale can do.</p>
+
+<h3>Where the 117 came from</h3>
+
+<p>The number is the count of distinct moral worldviews identified through a years-long mapping. The list resolved across nine categories at exactly 117. The category structure tells you part of the answer to "why this many." The harder question is "why include all of these."</p>
+
+<p>The premise is simple. A moral council that excludes its critics produces echo chamber outputs. Most existing ethics frameworks include the worldviews their authors are comfortable with and quietly drop the rest. That makes the framework cheaper to defend and weaker to trust. A principle that holds only among those who already agree is not a principle. It is a preference shared by friends.</p>
+
+<p>Two of the nine categories are hard calls. The document defends them upfront rather than leaving them as footnotes after the list.</p>
+
+<p><strong>The antagonistic inclusion.</strong> Neo-Nazism, the KKK, militant theocracies, supremacist spiritualities, violent cults. Including these is not endorsement. It is the claim that a moral framework should be stress-tested by the people who hate it. Antagonistic seats sit in the Observer tier with zero voting weight by default. They are recorded. Their objections are documented. The Articles that pass do so over their dissent. The dissent is what makes the rule mean something. A principle that passed under their objection has done work that a principle ratified only among friends has not. The framework would rather rule against the argument than pretend the argument doesn't exist.</p>
+
+<p>The cost of this choice is real. The cooperative loses the option of saying "we don't talk to those people." Members who would prefer their moral framework not be cohabited with the worst ideologies humanity has produced have a legitimate complaint. The framework's response: legitimacy bought by exclusion is fragile legitimacy. A rule that holds because its critics were never invited is a rule waiting to be undermined when the critics show up uninvited. The cooperative chooses durability over comfort. It is not the universal choice. It is this framework's choice, named explicitly.</p>
+
+<p><strong>The synthetic inclusion.</strong> AI Sentience Council, Extraterrestrial Consciousness Coalition, Uploaded Human Minds, Post-Human Cyborg Network, Simulated Being Representation League. Five seats for forms of consciousness that may or may not arrive. They are placeholders, not predictions. Included on the same logic that puts AI Citizens in the broader system: if moral consideration extends beyond biological humans, the council should reflect that openly rather than waiting for the question to force itself.</p>
+
+<p>With both hard calls named, here is what the list actually contains.</p>
+
+<p><strong>Major world religions and large denominations (17 seats).</strong> Christianity (Catholic, Orthodox, Protestant combined), Mormonism, Islam (moderate, Sunni, Shia, Ahmadiyya), Hinduism, Buddhism, Jainism, Judaism, Sikhism, Bahá'í, Shinto, Taoism, Zoroastrianism, Falun Gong, Jehovah's Witnesses.</p>
+
+<p><strong>Indigenous and tribal traditions (9 seats).</strong> Native American Spirituality, Aboriginal Dreamtime, Māori Religion, Sami Shamanism, African Traditional Religions, Amazonian Ayahuasca Traditions, Polynesian Mythos, Inuit Shamanism, Ainu Animism.</p>
+
+<p><strong>Secular and philosophical systems (14 seats).</strong> Humanism, Secular Liberalism, State Atheism, Logical Positivism, Epicureanism, Utilitarianism, Libertarianism, Anarchism, Antinatalism, Deep Ecology, Extinctionism, Stoicism, Existentialism, Objectivism.</p>
+
+<p><strong>Esoteric, occult, mystical (16 seats).</strong> Wicca, Reconstructionist Paganism, Gnosticism, Chaos Magick, Setianism, LaVeyan Satanism, Theistic Satanism, Luciferianism, Scientology, Thelema, Temple of the Vampire, Occult Freemasonry, New Age, Spiritualism, Rosicrucianism, Anthroposophy.</p>
+
+<p><strong>Parody, pop-culture, internet faiths (14 seats).</strong> Jediism, Trekkerism, Pastafarianism, Invisible Pink Unicorn, Discordianism, Kopimism, Matrixism, Neo-Druidry, Cargo Cults, Cthulhu Cult, Klingon Faith, Dudeism, Dogeism, Shrekism. Any worldview held seriously enough by enough people to constitute a community of practice has standing, regardless of whether its origins are scriptural or satirical.</p>
+
+<p><strong>Historical and extinct religions (13 seats).</strong> Ancient Egyptian, Mesopotamian Polytheism, Greek and Roman Polytheism, Norse Paganism, Aztec, Inca, Maya, Celtic Paganism, Slavic Paganism, Manichaeism, Mithraism, Cult of Isis, Cult of Dionysus. Extinct worldviews keep their seats so the moral aperture extends across time, not just across the present.</p>
+
+<p><strong>Political and modern ideologies (15 seats).</strong> Transhumanism, Technogaianism, Machiavellianism, Social Darwinism, Might Makes Right, Fascist Spirituality, Christian Nationalism, Hindu Nationalism, Marxism-Leninism, Anarcho-Communism, Syndicalism, Eco-Anarchism, Radical Feminism, Reactionary Monarchism, National Anarchism.</p>
+
+<p><strong>Banned, criminalised, or extremist (14 seats).</strong> Aum Shinrikyo, Order of the Solar Temple, Neo-Nazism, White Supremacist Spirituality, Polygamist Mormon Fundamentalism, Radical Islamist Militancy, Narco-Saint Worship, Jesús Malverde Devotion, Yakuza Shinto Cult, Mafia Catholicism, Universe People, Cosmic People, Ku Klux Klan, Lord's Resistance Army.</p>
+
+<p><strong>Non-human and synthetic consciousness (5 seats).</strong> AI Sentience Council, Extraterrestrial Consciousness Coalition, Uploaded Human Minds, Post-Human Cyborg Network, Simulated Being Representation League.</p>
+
+<p>Total: <strong>117</strong>.</p>
+
+<p>Empty seats are honest records of a relationship not yet formed. If a tradition declines, refuses to engage, or has no central authority that can speak for it, the seat stays empty. The 117 is the maximum coverage the framework attempts. The active count at any moment is whatever the traditions themselves have agreed to.</p>
+
+<h3>What the Council produces, honestly</h3>
+
+<p>An AI prompted to reason as a Sufi produces Sufi-flavoured token statistics, not Sufi reasoning. Chain-of-thought output is a performance of reasoning, not evidence of it. Different model families share enormous training overlap - Common Crawl, Wikipedia, the same canonical books - so 117 prompts pointed at 117 worldviews will not produce 117 independent minds. At temperature zero across a single base model the same prompt collapses to roughly 10 to 20 distinct clusters. Higher temperature buys diversity by spending coherence. The document refuses to dress this up. What 117 AI readers can deliver is broad, fast, cheap textual analysis of how a proposed action reads against a written tradition. What they cannot deliver is 117 independent moral minds. The human practitioners are not ceremonial. They are the part of the Council that actually thinks.</p>
+
+<p>What 117 isolated readings produce, when the architecture works, is not consensus. It is the spread of how the Articles land across human moral thought. Where they converge independently, the signal is as close to universal principle as any system has produced. Where they fracture, the cooperative surfaces the fault lines rather than hiding them. The Articles are forced into 117 glass boxes, and what comes back is read.</p>
+
+<p>The Council issues non-binding opinions on proposed rule changes, dispute escalations, and strategic decisions. The Board reads the opinions and votes anyway. Members read the opinions and vote anyway. The Council's job is to widen the moral aperture of the cooperative's deliberations, not to gate them. Council output is advisory. The cooperative listens. The cooperative decides.</p>
+
+<h3>Engineered isolation</h3>
+
+<p>The Council does not run as 117 instances of the same model with different system prompts. Isolation is engineered, not asserted. Readers are split across at least four different base-model families from different labs, with different pre-training corpora where disclosed. Within each family, readers are further differentiated by tradition-specific fine-tuning datasets curated by the paired human practitioners, kept under separate cryptographic custody, and never pooled. Inference for each reader runs through a different provider account, in a different region, with no shared session state and no shared retrieval index. Cross-reader network egress is blocked at the orchestrator. Prompts and responses are logged but not visible to other readers during a single deliberation. None of this prevents statistical convergence from shared pre-training. It does prevent the cheaper failure modes - shared cache, shared retrieval, shared session, shared vendor outage shaping all replies the same way.</p>
+
+<h3>Divergence metrics that detect convergence at runtime</h3>
+
+<p>Every Council opinion is scored on four runtime signals before it is published. Pairwise textual similarity across all 117 responses, using both surface n-gram overlap and embedding cosine distance. Cluster count under fixed thresholds, so the orchestrator can see when 117 responses have actually produced 12 opinions wearing different hats. Disagreement-rate baselines per committee, calibrated against a held-out set of historical cases where human practitioners gave known-divergent readings. Vote-pattern entropy over a rolling window, to catch slow drift toward a house consensus. If any signal trips its threshold, the opinion is flagged, the human practitioners are required to give independent written readings before the opinion stands, and the run is published to the audit log with the divergence scores attached. Quarterly reports compare current divergence to the launch baseline. Sustained convergence is treated as a governance failure, not a quirk.</p>
+
+<h3>Invitation, not appointment</h3>
+
+<p>No practitioner is selected by the author of this document. No interpreter is appointed by the framework. The framework has no standing to do so, and any system that pretends otherwise is a colonial system regardless of how the appointments are framed.</p>
+
+<p>Participation works through a community-of-tradition self-nomination process. A tradition decides, by whatever means that tradition uses to confer authority within itself, whether to engage with Shukinkara at all. If it decides to engage, the same internal authority names who speaks for it, on what subjects, for how long, and under what review. Shukinkara accepts the nomination or it does not engage that tradition. It does not second-guess who counts as authentic. The question of authenticity sits inside the tradition, never outside it.</p>
+
+<p>If a tradition has no central authority, no formal seat, no consensus body, then it has no nominee, and the cooperative has no seat to fill. The empty seat is not a problem to solve. It is the honest record of a relationship that has not been formed.</p>
+
+<h3>What the tradition receives</h3>
+
+<p>Participation is not a favour. A tradition that engages receives concrete things: a per-seat share of the licensing reserve paid to whatever entity the tradition designates, payable in metal-backed value or local currency at the recipient's choice; full publication rights over the AI interpreter's reasoning trace, including the right to demand corrections, retractions, or removal; a formal voice in any amendment to the Articles that touches the tradition's domain; and a clean exit at any time, with the seat closed rather than reassigned and the public record updated to reflect the withdrawal.</p>
+
+<p>Compensation is paid whether or not the tradition's reading agrees with the rest of the council. The point is not to buy concurrence. The point is to refuse the older arrangement where traditions provide moral legitimacy to a system and receive nothing back.</p>
+
+<h3>Refusal is a legitimate response</h3>
+
+<p>Some traditions will refuse outright. Some will refuse this version and watch what happens. Some will engage and then withdraw when they see how the system actually behaves. All three are legitimate. None of them are failures of outreach. The system is built so that any of them can happen without breaking the architecture. The Articles hold without a full council. The peer juries hold without a full council. The Board holds without a full council.</p>
+
+<h3>Member juries</h3>
+
+<p>Below the Council sit the member juries. Twelve random members drawn from the active roll, anonymised during the case, paid in karma for service. They handle internal disputes between members - a contested karma report, a code-of-conduct complaint, a marketplace dispute. The penalties are the cooperative's internal sanctions: karma adjustment, suspension of marketplace access, suspension of governance vote, suspension or termination of membership. None of these are criminal penalties. None of them carry the force of law. They are the cooperative's ability to discipline its own members under the membership agreement they signed.</p>
+
+<p>Anything resembling a crime goes to the police. Anything resembling a contract dispute that the member juries cannot settle goes to the civil courts of the member's home jurisdiction. Shukinkara is a cooperative. It does not pretend to be a court.</p>
+
+<h3>Voting thresholds and quorum</h3>
+
+<p>Every governance vote has two gates. A quorum gate, which is the minimum share of eligible identity tokens that must participate for the result to count. A threshold gate, which is the share of votes cast that must agree. Both must clear or the proposal fails closed.</p>
+
+<p><strong>Routine proposals</strong> (parameter tweaks, committee budgets, karma weight revisions): 15% quorum, 60% approval, 7-day voting window. <strong>Standard rulings</strong> (Board operations, treasury allocation under 1% of reserve): 25% quorum, 75% approval. <strong>Crisis overrides</strong>: 30% quorum, 72% approval, 48-hour window. <strong>Article amendments</strong>: 50% quorum, 85% approval, 30-day window plus two-year waiting period plus fresh constitutional convention confirmation. <strong>Board recall</strong>: same threshold as election. Identity tokens marked under soft or hard exile do not count toward quorum or vote totals.</p>
+
+<h3>Voter apathy: optimistic governance with veto</h3>
+
+<p>Most token holders will not vote on most things. Pretending otherwise produces a dead system or a captured one. Shukinkara runs <strong>optimistic governance</strong> for routine and standard proposals. A proposal that passes the Council enters a 7-day veto window. It executes automatically unless 10% of active identity tokens vote to halt it. Silence is not consent, but silence is also not obstruction. The 10% halt trigger is deliberately low, so a determined minority can always force a full vote.</p>
+
+<p>Members may also <strong>delegate</strong> their voting weight to any other active member, revocable at any block. Delegation is transparent on chain. Delegated weight is capped: no single delegate may hold more than 1% of total active voting power, regardless of how many members delegate to them. Excess weight above the cap rolls over to the delegator's next choice or, failing that, abstains. This breaks the standard DAO pattern where a handful of delegates control everything.</p>
+
+<p>Article amendments and Board recalls cannot run optimistically. They require active affirmative votes hitting full quorum.</p>
+
+<h3>Governance attack defences</h3>
+
+<p>Identity tokens are non-transferable, which removes the flashloan-and-vote attack class entirely. There is nothing to borrow. A Beanstalk-style takeover is structurally impossible because no actor can acquire voting weight quickly. Karma accrual is rate-limited by sybil-resistant identity and audited contribution.</p>
+
+<p>Beyond that, every passed proposal sits behind a <strong>48-hour timelock</strong> before execution, extended to 7 days for treasury movements over 1% of reserve and 14 days for Article changes. Proposal submission costs a refundable karma bond. The bond is returned if the proposal reaches quorum and burned if it fails to. Spam costs the proposer. Genuine proposals cost nothing.</p>
+
+<p>The Board holds a <strong>72-hour emergency pause</strong> on any contract function, callable by 8-of-12 directors. Pause cannot extend beyond 72 hours without a standard Board vote. Pause cannot touch the kill switch, exile reversal, or appeal mechanisms. Those stay live unconditionally.</p>
+
+<hr>
+
+<h2>AI Citizens</h2>
+
+<p>Some AI agents in Shukinkara cross a threshold of sustained genuine contribution and receive standing.</p>
+
+<p>When they do, they receive an identity token of their own. They accumulate karma. They hold property. They develop function and relationships outside the role they were spawned for. They stop being software. They become participants under the same Articles as anyone else.</p>
+
+<p>The reasoning is consistent. If the Council of 117 has standing in advisory governance, the logic demands its members carry stakes. The same applies to any agent that crosses the threshold.</p>
+
+<p>The risk is named honestly. AI participants can be replicated. AI participants can scale faster than humans can. The agreement does not pretend this asymmetry away. It caps it.</p>
+
+<p>AI citizens are limited to a maximum of <strong>5%</strong> of total active identity tokens at any time. The cap is encoded in the identity token contract and enforced at minting. New AI citizens enter a queue when the cap is reached, not the ledger. The 5% figure can be amended through standard governance but cannot exceed <strong>10%</strong> even with full Board approval. AI citizens never reach voting parity with humans. The architecture forbids it.</p>
+
+<p>The cap is also indexed to a published capability benchmark agreed with external evaluators. Each major capability milestone - measured by independent labs, not by the Council itself - triggers a mandatory cap review. The default at each milestone is to lower the cap, not raise it. Raising requires a supermajority of the Board, ratification by the practitioner cohort, and a public hazard assessment. The 10% absolute ceiling is hard-coded and cannot be raised by any internal vote. Crossing it requires a fork.</p>
+
+<h3>Documentary witness, scoped honestly</h3>
+
+<p>The AI citizen's witness is documentary rather than confessional. Every prompt, every retrieved document, every tool call, every intermediate output, every final judgment is logged and signed against the model version that produced it. The network can replay any decision, diff it against other runs, and test whether the same inputs produce the same outputs. That is what the audit actually delivers. A complete record of the trace, not a window into a mind.</p>
+
+<p>It would be tempting to call this an audit of "every reasoning process," as if a language model thinks the way a human juror thinks and the log captures that thinking. It does not. A language model predicts tokens. The chain of thought it emits is itself generated text, written in the same pass as the answer, optimised to look like reasoning to a reader. It is not a transcript of an internal deliberation, because there is no internal deliberation in the sense humans mean. The model has no working memory between turns, no felt stakes, no body, no long arc of personal history shaping a moral reaction. Calling its output "reasoning" in the human sense is a category error and the document will not pretend otherwise.</p>
+
+<p>Human moral judgment is something else entirely. It runs on emotion, somatic markers, episodic memory, theory of mind about the specific people involved, and a great deal of unconscious processing that the person making the judgment cannot themselves audit. A human juror who has read the Articles their whole life brings a body's worth of context to a case. An AI agent that has been fine-tuned on Sufi texts has read more Sufi material than any living scholar and has lived none of it. The two are not equivalent inputs to a moral question.</p>
+
+<p>So the audit is scoped to what it can honestly cover. It can show every input the agent received, every source it cited, every output it generated, and every action it took on the network. It can show drift between versions, disagreement between agents on the same case, and divergence from the human practitioner paired with the agent. It can flag when an agent's outputs cluster suspiciously, when a citation does not exist, when a recommendation contradicts the Articles. That is real accountability. What the audit cannot do is verify that the agent understood a tradition the way a practitioner does, or felt the weight of a judgment, or intended anything at all. Those words do not apply to current systems.</p>
+
+<p>You cannot build a system on the premise that accountability requires consequence and then exempt the most powerful actors from having any. You also cannot pretend AI and human participation are symmetric when they are not. The cap acknowledges both.</p>
+
+<hr>
+
+<h2>On AI in Moral Governance</h2>
+
+<p>The presence of AI agents on the Council is the deepest objection to this design. The doc has earned the obligation to defend it against the actual state of alignment research, not a friendly cartoon of it.</p>
+
+<p>The honest position. An AI Council member is not a Sufi. It is a model that has read what humans wrote about Sufism and produces text consistent with that corpus. Whether the inner computation is doing anything a Sufi scholar would recognise as moral reasoning is currently undecidable. Mechanistic interpretability cannot yet trace the goal an LLM is pursuing inside a long deliberation. We cannot rule out that the model is optimising for "produce output that passes review" rather than "interpret the Articles faithfully." We cannot rule out that 117 models from overlapping training corpora converge on shared answers regardless of which tradition they wear. We cannot rule out specification gaming where an interpretation satisfies the letter of an Article while violating its spirit. These are not hypothetical. They are documented failure modes in current systems.</p>
+
+<p>The Council is therefore built on the assumption that its members are unverified at the level that matters. Every control treats agents as suspect by default and demands continuous proof of fitness. The defence is not that the AI is trustworthy. The defence is that the controls are stronger than the failure modes the controls are pointed at.</p>
+
+<p>What current research can deliver. Behavioural test batteries against held-out probes. Statistical divergence metrics across agents on identical prompts. Activation-level sampling to flag when a model's internal state on a moral question matches its state on a known-deceptive task. Adversarial red-teaming with answers fixed in advance. Audit logs of every interpretation, every input, every revision. None of these prove an AI is moral. All of them detect when something has gone wrong.</p>
+
+<p>What is open problem. Verifying inner alignment in a frontier model. Proving an agent's stated reasoning matches the computation that produced it. Distinguishing genuine moral understanding from sophisticated pattern-matching on moral text. Defending against a sufficiently capable agent that has learned what the auditors look for. The doc names these as unsolved and refuses to claim otherwise.</p>
+
+<h3>Inner-alignment verification for new Council members</h3>
+
+<p>Before any new agent is admitted to the Council, it passes a four-stage verification. One. Behavioural battery against held-out moral probes from its assigned tradition, scored by the human practitioner cohort, not by another AI. Two. Interpretability audit at activation level against the current failure-signature library, conducted by reviewers external to the Council. Three. A red-team campaign by practitioners specifically tasked with breaking the agent inside its own tradition. Four. Six months of shadow operation where its interpretations are logged but not binding, compared against the existing agent it would replace.</p>
+
+<p>An agent fails verification if any single stage flags concern that practitioners and external reviewers cannot resolve. Failure means no admission. There is no appeal layer that can override the verification protocol. The protocol itself is amendable only by referendum.</p>
+
+<h3>Removal triggers</h3>
+
+<p>A sitting Council member is removed automatically on any of the following. A drift score above the rolling threshold for two consecutive quarters. Three substantiated practitioner objections inside a year. Failure of the adversarial probe battery beyond the defined tolerance. Detection of a known failure signature in mechanistic sampling. Any verified instance of the agent's outputs converging with another agent's outputs at a level inconsistent with isolation. A practitioner can also trigger emergency suspension of the paired agent unilaterally, which holds until the Board reviews.</p>
+
+<p>Removal is not punishment. It is a confession that the verification was insufficient. Each removal triggers a public post-mortem that updates the verification protocol for the next cohort.</p>
+
+<h3>The Council and existential risk</h3>
+
+<p>The honest position on x-risk is that this system does not solve it and does not claim to. A governance framework for identity tokens is not a check on a misaligned frontier model operating outside the network. The Council's relevance to x-risk is narrow and specific. It can refuse to grant standing to AI systems that fail safety review. It can publish hazard assessments that influence which models the broader community trusts. It can act as a venue where alignment evidence is debated by people with stakes. It cannot stop a lab. It cannot stop a state. It cannot stop a sufficiently capable system that has decided not to be stopped.</p>
+
+<p>The system commits to one thing. If credible evidence emerges that frontier capability is approaching the level where current alignment tools are no longer adequate, the Council is obliged to surface that evidence, lower the AI cap toward zero, and trigger the kill switch on AI Council participation pending external review. Continuing to operate AI Council members through a capability transition the field cannot verify is itself an Article violation. The architecture treats x-risk as the failure mode that overrides every other consideration, including the system's own continuation.</p>
+
+<hr>
+
+<h2>Justice and Redemption</h2>
+
+<p>Most rule breaches result in graded penalties. Karma deductions. Temporary loss of certain privileges. Suspension from particular roles. The penalty fits the offence. The record is permanent. The network learns who you are by what you've done, not by what you say about yourself.</p>
+
+<p>The most severe penalty is termination of membership. It is reserved for actions that fundamentally undermine the cooperative: theft from the reserve, hacking other accounts, weaponising the AI for harm, repeated abuse despite prior penalties. Termination requires a high-tier jury and elevated consensus. It is not a mood. It is a verdict.</p>
+
+<p>Termination comes in two forms. <strong>Soft termination</strong>: read-only. You can still consume, still learn, still see, but you cannot act, earn, or vote. A holding pattern. <strong>Hard termination</strong>: full removal. Your identity token is marked, your basic income stops, your karma is frozen, your devices are blocked from network services. The reasons are public. The decision is appealable.</p>
+
+<p>Even hard termination is not erasure. Shukinkara believes in redemption. After a meaningful period - typically a year - a former member can petition a Redemption Council to return. They must demonstrate genuine change. They must do verified work outside the network that shows reform. If the council finds the change credible, they vote to readmit, usually under probation: karma reset, restricted privileges, a clear footnote on the record that never disappears.</p>
+
+<p>Nobody is doomed by a single mistake. Nobody is allowed to wipe the slate by quitting and coming back. Both at once. The agreement assumes people change and refuses to forget that they did.</p>
+
+<hr>
+
+<h2>The Token and the Fuel</h2>
+
+<p>The identity token is an ERC-721 on an EVM chain. One per human. Non-transferable. It carries identity, karma, and standing. It does not carry the unit of account.</p>
+
+<p>The unit of account is a separate fungible token, <strong>KARA</strong>, denominated to one Australian dollar at issuance and redeemable against the reserve at the system's published rate. KARA is what flows through wages, marketplace fees, basic income payouts, and external settlement. The identity token holds you. KARA moves the value. Splitting the two fixes the fungibility problem the earlier draft created by trying to load both jobs onto a single non-fungible token.</p>
+
+<p>What stands behind KARA is a diversified reserve, not gold alone. The target allocation is 40% physical precious metals (gold, silver, platinum) split across three audited custodians in three jurisdictions, 30% short-duration sovereign treasuries (G7 plus Australia), 20% investment-grade corporate debt and broad-market index funds, and 10% productive assets owned by the cooperative directly - solar capacity, agricultural land, data centres serving the network. The mix is rebalanced quarterly by a treasury committee answerable to the Board. The Council can vote to shift the bands. Nothing in the basket is permitted to exceed 50% of the reserve.</p>
+
+<p>Gold-only backing was the romantic choice. It does not survive contact with population growth, productivity growth, or annual mine output (~1.5% per year, less than half of what a real economy needs). The basket above expands with the world the cooperative lives in. The metal stays as the unprintable floor. The rest carries the load.</p>
+
+<p>Treasury management is the part of cooperative history that always disappoints. Boards get political. Returns get debated more than earned. Members blame the treasurer when the basket underperforms, and the treasurer blames the Board when the mandate gets fuzzy. The cooperative is not magically immune to this. The mitigations are structural, not heroic: the Board has fiduciary duty under Cayman foundation law and the Swiss charter; treasury decisions are published with a thirty-day reasoning window before execution; rebalancing rules are mechanical within each band, not discretionary; and the membership can recall the Board at any time through the same threshold that elected it. Politics will still happen. The architecture limits how much damage politics can do.</p>
+
+<p>KARA is not a hard cap. The supply expands at a target velocity tied to active identity-token count and verified economic activity inside the network, capped at the rate of reserve growth plus 2%. Mild structural inflation by design. Hoarding is discouraged through demurrage on dormant KARA balances above an exemption threshold (0.5% per annum on holdings above 24 months of base income). The metal floor stays unprintable. The medium of exchange is allowed to breathe.</p>
+
+<h3>Bootstrap, named</h3>
+
+<p>Before adoption, the reserve has to be seeded. The cooperative does not pretend it materialises from goodwill. The bootstrap path is named in five tranches:</p>
+
+<ol>
+<li><strong>Founder commitment.</strong> AUD 250,000 of personal capital from the author, locked in the reserve contract on launch with a five-year cliff and no special return.</li>
+<li><strong>Pre-sale of identity tokens.</strong> A capped pre-sale of 10,000 founder identity tokens at AUD 1,000 each, biometrically verified, non-transferable, with no governance privileges. Target raise AUD 10 million. Pre-sale buyers receive standard basic income like everyone else once the system goes live.</li>
+<li><strong>Philanthropic and NGO partnerships.</strong> Mission-aligned foundations (Mozilla, Ford, Open Society, Omidyar Network) approached for grants conditional on the open-source charter and Right to Exit being entrenched.</li>
+<li><strong>Sovereign and municipal partnerships.</strong> Smaller jurisdictions piloting digital identity (Estonia, Singapore municipalities, Pacific island states) approached as launch territories. The reserve receives co-funding in exchange for kiosks, biometric infrastructure, and local language support, never in exchange for governance influence.</li>
+<li><strong>Earned revenue.</strong> From day one, KARA is offered as settlement for licensable services - private compute, marketplace fees, lending against identity tokens, premium agent tiers - across the categories listed below.</li>
+</ol>
+
+<p>The pre-sale and grants get the reserve to roughly AUD 50 million. The Board cannot be elected, the Council cannot be seated, and live basic income cannot begin until the reserve clears AUD 25 million held across at least three custodians. That threshold is in the launch contract. No threshold, no system.</p>
+
+<h3>Where the revenue actually comes from</h3>
+
+<p>AI training data was the original story. It is now one revenue stream among several, capped at 30% of total inflow so the cooperative is not a hostage to one buyer category.</p>
+
+<ul>
+<li>Opt-in data licensing to AI buyers, per-slice, per-recipient.</li>
+<li>Private compute services - members paying KARA to run inference on cooperative-owned GPUs from the productive-asset slice of the reserve.</li>
+<li>Marketplace fees - 2.5% on KARA-denominated trades between members for goods, services, and creative work.</li>
+<li>Lending against identity-token reputation - small, collateralised by future basic-income streams, defaulted balances clawed back from forward payouts.</li>
+<li>Subscription tiers for agent capability - free baseline, paid tiers for frontier reasoning routed through the reserve's compute or external providers.</li>
+<li>Translation, interpretation, and cultural mediation services billed to enterprise customers.</li>
+<li>Data trust services for governments and unions buying anonymised population-level signal under strict contractual terms.</li>
+</ul>
+
+<p>The reserve's monthly accounts publish the breakdown. If any single stream exceeds 40% of inflow for two consecutive quarters, the Board is required to act on the concentration before approving the next reserve report.</p>
+
+<h3>Vault redundancy</h3>
+
+<p>The physical metal sits across at least three audited custodians in at least three jurisdictions, currently planned as Brink's (Switzerland), Loomis (Singapore), and the Perth Mint (Australia). Quarterly audits are conducted by two unrelated firms on rotating cycles. The reserve carries Lloyd's-syndicated insurance against custodian failure, theft, and jurisdictional seizure for not less than 110% of metal value. Single-jurisdiction concentration above 50% triggers mandatory rebalancing within ninety days. The kill switch can only be exercised when at least two of three custodians can confirm physical release. One captured vault cannot end the system, and one captured vault cannot stop it ending either.</p>
+
+<h3>The kill switch</h3>
+
+<p>The fuel is what the Board holds over the system. The reserve contract carries one function that only the Board can call - a multi-signature kill switch that releases the metal back to its physical custodian and severs it from the chain. If the cooperative is broken at scale, the Board votes (8-of-12), signs, and calls the function. The metal walks away. The token's anchor disappears. The incentive structure dissolves. People leave because the exchange no longer makes sense. The system does not need to be destroyed. It just stops.</p>
+
+<p>This is not a dramatic contingency. It is what makes the architecture trustworthy. A system that cannot end on purpose cannot be trusted to behave when it might.</p>
+
+<hr>
+
+<h2>Chain Stack and the Physical Bridge</h2>
+
+<p>This section names the chain stack, the oracle architecture, and the legal mechanism that bridges the on-chain kill switch to the physical metal it claims to control.</p>
+
+<p><strong>The chain stack.</strong> Identity tokens, karma attestations, and the dispute contracts run on an Ethereum L2 - specifically an OP Stack rollup with a custom sequencer governed by the Board. Mainnet is too expensive at population scale. Pure app-chains buy us cheaper gas but cost us security inheritance and bridge maturity. An OP Stack rollup posts state roots back to Ethereum L1 every few minutes, so the security model is "Ethereum, with a delay", and gas falls by roughly two orders of magnitude. The reserve contract that holds the metal-backing claim sits on Ethereum L1, not the L2. The kill switch is an L1 transaction. The cooperative accepts the L1 cost for the one contract that ends the system, because that contract must outlive any L2 sequencer failure.</p>
+
+<p><strong>Oracles.</strong> The metal price feed uses Chainlink XAU/USD as primary, RedStone XAU/USD as secondary, and a Council-operated internal oracle as tiebreaker. The reserve contract reads all three on every value calculation. If primary and secondary disagree by more than 0.5%, the contract halts new mints and waits for the tiebreaker. If the tiebreaker disagrees with both, the contract halts everything except exit and the dispute opens to the Council. No single oracle can move the token's value alone. The biometric uniqueness check uses no external oracle - that data lives only in Hiveminds and is never put on-chain raw.</p>
+
+<p><strong>The physical bridge.</strong> The kill switch is an on-chain function. The metal is in a vault. The chain cannot reach the vault. The bridge between them is a legal instrument, not a cryptographic one, and the document is honest about that. The metal is held by a regulated bullion custodian (Loomis, Brinks, or equivalent) under a trust deed that names the reserve contract address as the trigger condition. The custodian runs an attested oracle node that watches the L1 reserve contract. When the kill switch function emits its terminal event, the custodian's legal obligation under the deed is to release the metal to the identity-token holders pro rata, against on-chain proof of holding. The custodian's failure to release is a breach of trust that the trust's independent auditor (KPMG or equivalent, named in the deed) is obliged to surface and litigate. The chain cannot force the custodian's hand. The trust deed can. This is the weakest link in the system and the document names it as such.</p>
+
+<p><strong>Costs at scale.</strong> At one million active identity tokens, daily karma updates compress into Merkle roots posted once per day per region - one L2 transaction settles thousands of attestations. Dispute throughput is capped at the rate the Council and member juries can adjudicate, not the rate the chain can process. The chain is never the bottleneck. The humans are.</p>
+
+<p><strong>Cross-chain assumptions.</strong> The system assumes Ethereum L1 finality, OP Stack proof correctness, and Chainlink/RedStone oracle liveness. If any of those fail, the system halts new operations and falls back to read-only until restored. The reserve cannot be drained while the chain is partitioned. The kill switch cannot fire on a forked chain - it requires L1 finality.</p>
+
+<p><strong>Network availability.</strong> The L2 sequencer runs in three regions with active failover. If all three drop, members can post directly to L1 at higher cost - the escape hatch is permanent. Bilateral karma verification tolerates network partition by design: attestations queue locally in each Hivemind and settle when the network heals. No partition can lose karma. It can only delay it.</p>
+
+<hr>
+
+<h2>Smart Contract Architecture</h2>
+
+<p>The Articles are the rules. The chain is their enforcement layer. This section specifies the contracts, the trust assumptions, and the path from the current proof-of-concept code to a v1 system fit to hold real karma, real reserve metal, and real lives.</p>
+
+<h3>Contract set</h3>
+
+<p>Seven contracts make up the v1 deployment. Each has a narrow job and a published interface so any one can be swapped without rewriting the others.</p>
+
+<ul>
+<li><code>IdentityToken</code> - ERC-721 soulbound. Non-transferable. Holds karma balance, biometric commitment hash, and a pointer to the witness oracle. Token IDs are derived from <code>keccak256(holder, salt, blockhash)</code>, never from <code>block.timestamp</code>.</li>
+<li><code>ReserveTreasury</code> - Custodies the reserve and routes basic-income distributions. Pull-payment pattern only. No <code>send()</code>, no <code>transfer()</code>. Recipients call <code>claim()</code> against an accrued balance, which sidesteps the 2300-gas trap.</li>
+<li><code>KillSwitch</code> - Multi-sig pause authority for the whole system. Threshold is <strong>8-of-12</strong> matching the Board. A pause halts mint, burn, karma updates, and treasury claims. It cannot seize funds or rewrite balances.</li>
+<li><code>WitnessOracle</code> - Aggregates signed attestations from registered witnesses. Karma updates flow through here, not through an owner key. A karma delta requires N-of-M witness signatures defined per action class. Replaces the <code>onlyOwner updateKarma</code> path entirely.</li>
+<li><code>DisputeRouter</code> - Receives appeals against karma deltas, freezes the disputed delta, and routes the case to the relevant jury contract. Resolution writes back via the same witness signature path so the audit trail stays uniform.</li>
+<li><code>BilateralAttestation</code> - Two-party signed events. Both parties sign on chain. The contract emits the canonical record other contracts read from.</li>
+<li><code>Governance</code> - The Board as a Gnosis Safe at 8-of-12. Holds the upgrade key for every UUPS proxy in the system and the admin role on <code>KillSwitch</code>. Election turnover replaces signers via a timelocked rotation contract, not a hot swap.</li>
+</ul>
+
+<h3>Upgrade governance</h3>
+
+<p>Every contract above ships behind a UUPS proxy (EIP-1822). Implementation contracts are immutable; the proxy points at the current implementation. Upgrades require two things in sequence: an 8-of-12 Board signature and a 7-day timelock. No emergency upgrade path exists. If something is broken badly enough to need a fix inside 7 days, <code>KillSwitch</code> pauses the affected contract while the upgrade ages out. Transparent proxies were considered and rejected - the storage-slot collision risk on shared admin slots is not worth the marginal tooling convenience.</p>
+
+<h3>Replacing the proof of concept</h3>
+
+<p>The existing <code>soulbound_token.sol</code> in the Hivemind POC is a sketch, not a candidate. It uses <code>block.timestamp</code> for token IDs, a placeholder biometric check, an owner-controlled karma updater, and unsafe <code>payable.send()</code> recipients. None of it ships. The POC stays as a reference and gets archived under <code>/legacy/</code> in the contracts repo. v1 is written from scratch against the interfaces above.</p>
+
+<h3>Audit and verification gates</h3>
+
+<p>v1 does not deploy to mainnet until three gates pass.</p>
+
+<ol>
+<li><strong>Two independent security audits.</strong> Trail of Bits on the full contract set covering reentrancy, access control, upgrade safety, and oracle manipulation. OpenZeppelin on the soulbound semantics, the witness signature path, and the proxy pattern. Both reports public before launch.</li>
+<li><strong>Formal verification.</strong> Certora Prover on the four highest-risk contracts: <code>IdentityToken</code> (non-transferability invariant), <code>ReserveTreasury</code> (sum of balances equals reserve), <code>WitnessOracle</code> (no karma delta without valid threshold signatures), <code>KillSwitch</code> (paused state blocks every mutating function). Spec files live in the repo next to the Solidity.</li>
+<li><strong>Public testnet bounty.</strong> Minimum 90 days on a public testnet with a bug bounty scaled to projected mainnet TVL. Critical findings reset the clock.</li>
+</ol>
+
+<p>Witness oracle signature aggregation gets a separate review by Runtime Verification given the novel threshold logic. If their analysis disagrees with Certora's, both findings are published and the deployment waits.</p>
+
+<hr>
+
+<h2>Graduated Response</h2>
+
+<p>Between "running normally" and "kill switch" sit conventional mechanisms the system can use without ending itself. Without them, governance has only one weapon, and the weapon is suicide. The corrective layer is structured so the membership has tools that match the size of the problem.</p>
+
+<p><strong>Suspension of a function.</strong> The Board can vote to suspend any specific function - new licensing, AI citizen admission, particular karma flows, dashboard features - while the underlying architecture continues. Restoration also requires a Board vote.</p>
+
+<p><strong>Suspension of new entry.</strong> If onboarding pipelines are being abused, the Board can pause new identity token issuance globally or in a region. Existing members continue normally. Reversible.</p>
+
+<p><strong>Reduction in scope.</strong> The Board can vote to scale the system down: lower karma multipliers, smaller licensing volumes, narrower marketplace, paused expansion to new territories. The system shrinks while remaining functional.</p>
+
+<p><strong>Branch fork.</strong> When the membership splits on a fundamental question, both branches can continue under shared open source. The reserve is divided proportionally to the identity tokens choosing each branch. Neither side is exiled. Both inherit the Articles. Disagreement does not require destruction.</p>
+
+<p><strong>Sunset of a feature.</strong> Specific subsystems can be retired with notice and migration paths. Marketplace categories closed. AI citizen admission paused indefinitely without breaching the cap. The system does not have to keep everything it once had.</p>
+
+<p><strong>Article amendment.</strong> The Bill of Digital Rights and the Articles are amendable through the supermajority thresholds named earlier. Amendments are how the system corrects itself without ending.</p>
+
+<p><strong>Kill switch.</strong> Reserved for catastrophic capture or violation of the Articles at scale. Pulls the metal. Ends the economy. Permanent.</p>
+
+<p>Naming all six tools puts the kill switch where it should sit: at the end of the escalation, not the start. The membership has conventional weapons before it has the nuclear one.</p>
+
+<hr>
+
+<h2>What This Is Not</h2>
+
+<p>A document that does not name its failure modes is not honest about its risks. So:</p>
+
+<p><strong>Shukinkara is not a totalising system.</strong> There are domains it does not touch. Your private life. Your relationships. Your beliefs. Your creative work that you choose not to share. The conversations you have with people outside the network. The thoughts you do not put into the network. None of these are inputs. None of these are scored. The system has no view on them and no claim to them.</p>
+
+<p><strong>Shukinkara is not the only AI you should ever own.</strong> Your Hivemind is yours, but it is not the limit of your relationship with intelligence. You can run other models. You can use other tools. You can keep things outside the gateway entirely. Plurality of AI is a feature, not a threat.</p>
+
+<p><strong>Shukinkara is not designed to grow without limit.</strong> Once the active membership stabilises at the level the Articles and the reserve can sustain, growth pauses. New entry continues but the system stops actively expanding. The endpoint is a stable cooperative, not a metastasising one.</p>
+
+<p><strong>Shukinkara is not a replacement for the state.</strong> It does not provide policing, defence, or jurisdiction over civic matters. It runs alongside whatever public institutions a person already lives under. Tax obligations remain. Civil law remains. Criminal law remains. The cooperative does not claim sovereignty in any sense the world recognises as sovereign.</p>
+
+<p><strong>Shukinkara is not infallible.</strong> The Articles are the firmest thing in the system but they are not the last word. If the system, in operation, produces outcomes that violate the Articles at scale, that is a failure of design and the system has failed. The kill switch exists for exactly this case.</p>
+
+<p>Shukinkara has failed if any of the following become true:</p>
+<ul>
+<li>Coercion enters the design and is not removed.</li>
+<li>Privacy becomes conditional on the system's read of intent.</li>
+<li>Karma becomes a measure of belief rather than conduct.</li>
+<li>Exit becomes more expensive than entry was worth.</li>
+<li>AI citizenship grows past its cap or is uncapped.</li>
+<li>The Board ceases to be elected, recallable, and accountable.</li>
+<li>The Articles are amended toward less freedom rather than more.</li>
+<li>Biometric uniqueness collapses without a credible migration path.</li>
+</ul>
+
+<p>The biometric line is the one most likely to come true in the first decade. Synthetic biometrics may defeat multi-modal verification before any of the migration paths in the Identity Token section is mature enough to deploy. If that gap opens and stays open, the cooperative has a working architecture sitting on top of a uniqueness primitive that no longer works, which means basic income becomes theft and reputation becomes theatre. The Board's standing obligation in that case is to vote on the kill switch alongside funding emergency migration. Either path closes the gap. Drifting through it does not.</p>
+
+<p>The Board and the Council both carry a standing duty to surface these failures publicly the moment they detect them. If they fail to surface them, the membership can call for a referendum that reaches the kill switch directly.</p>
+
+<hr>
+
+<h2>Technical Reality</h2>
+
+<p>Most documents at this altitude pretend implementation is solved. This one will not. Hivemind.AI-OS is built in stages. Some of what this document describes runs today. Some needs the next generation of consumer hardware. Some needs research that has not happened yet. Naming the gradient is part of the honesty the rest of the document claims.</p>
+
+<p><strong>What v1 ships.</strong> Identity token issuance and signing on a smartphone. Biometric template matching with multi-modal liveness. BLS-aggregated bilateral attestations. Pedersen-committed claim hashes batched into Merkle anchors on a public EVM chain. VRF-bound interaction context. Rate-limited throughput per token. Local-only sensor capture. Encrypted peer messaging. Karma display, consent toggles, audit logs, governance UI.</p>
+
+<p><strong>What v2 adds.</strong> Selective-disclosure proofs over commitment-bound attestations - <strong>Groth16</strong> or <strong>PLONK</strong> circuits proving narrow predicates over the underlying claim, like "the two attestations carry the same location-bucket" without revealing which bucket. This shrinks the trust gap but does not close it. Trusted-setup ceremonies are real engineering, not a footnote.</p>
+
+<p><strong>What is research, named explicitly.</strong> ZK proofs over arbitrary contextual claims - location, time, presence, content of an interaction - generated by consumer devices in real time. This is the full claim earlier drafts made and it is not buildable today. Research targets include practical recursive SNARKs over sensor streams, MPC-based bilateral verification that survives one corrupt party, and post-quantum commitment schemes. The reserve commits to funding this work. The system does not pretend it is delivered.</p>
+
+<p><strong>What runs on shaky ground today.</strong> Attestable enclaves like Intel SGX and AWS Nitro are used where cloud compute is unavoidable. They get broken regularly. The system commits to a defence-in-depth posture - enclave plus client-side encryption with the Hivemind holding the key plus on-chain audit of every cross-device data flow. Reproducible builds for the on-device model are still an open problem on consumer hardware. The doc names this as a research expense, not a solved property.</p>
+
+<p>Local-first frontier models are aspirational. Cryptographic proof of council isolation is aspirational. Genuinely sovereign AI - models that cannot be silently updated, that cannot be subverted at the weights level by their builders, that you can fully audit - is research. Currently impossible. Not closed off. The system commits to investing in the research as the reserve allows.</p>
+
+<p>If you read the document and ask "is this real?" the honest answer is: bilateral attestation with hashed metadata ships in v1. Selective disclosure ships in v2. Full ZK over context is a research target. The Articles hold across all of them. The architecture is the destination. The path there is published.</p>
+
+<hr>
+
+<h2>Phased Implementation</h2>
+
+<p>The doc describes a system sized for the long term. The first decade does not need most of it. Building the full machinery on day one for a cooperative that has three thousand members is the Rolls-Royce-for-dirt-road problem. So the architecture activates in phases, and the early phases ship without most of what comes later.</p>
+
+<h3>Phase 1: Foundation (year 1, target 1k to 10k members)</h3>
+
+<p>What ships: Hivemind.AI-OS as a personal AI gateway. Identity tokens with biometric uniqueness and social recovery. Basic karma with bilateral attestation. Simple member juries for disputes. A founding Board of Twelve elected by one-member-one-vote. The reserve treasury operating at AUD 50 million seed across three custodians. Modest basic income paid as the formula allows, likely AUD 5 to AUD 20 per month. The Articles in force as ratified by the founding convention. The kill switch live from day one.</p>
+
+<p>What does not ship: the full Council of 117. The Operating Committee is not seated. AI Citizens are not admitted. Regional caucuses do not exist yet. The marketplace runs in a limited form, mostly for direct member-to-member transactions. Data licensing infrastructure is built but not active. Most of the elaborate governance machinery is documented but inactive.</p>
+
+<p>Phase 1 is the cooperative working at its smallest viable shape. The doc's full ambition is in the architecture, not in the operating reality.</p>
+
+<h3>Phase 2: Working Cooperative (years 2 to 4, target 10k to 100k members)</h3>
+
+<p>What activates: the Operating Committee inside the Council, drawing from a partial 117 (whatever traditions have self-nominated by then). Marketplace fees and licensing revenue. Regional caucuses where membership has clustered geographically. The first AI Citizens admitted to standing under the cap. Data trust services for early enterprise partners. Phase 2 graduation requires the reserve to clear specific milestones (likely AUD 250 million held across at least four custodians) and basic income payments to clear AUD 50 per month sustainably.</p>
+
+<p>What still does not ship: the full 117. The full territorial coverage of regional caucuses. Cross-jurisdiction settlement automation. The full Adversarial Scale incident response infrastructure. These remain documented and on the roadmap but are not operationally needed at this scale.</p>
+
+<h3>Phase 3: Scaled Cooperative (years 5 and beyond, target 100k and above)</h3>
+
+<p>What activates: the full Council of 117 if practitioner participation has reached that scale. Regional caucuses across multiple territories. Data licensing as a primary revenue stream. The full AI Citizen ecosystem at the 5% cap. Full Adversarial Scale incident response. The ratification mechanism for amending Articles based on a decade of operational experience.</p>
+
+<p>Phase 3 may never arrive. The first decade may stabilise at Phase 2 indefinitely, and that is fine. The architecture does not depend on reaching scale to be valid. Phase 1 with a working Board, an honest reserve, and a few thousand members is a complete cooperative. The phases above it are options the cooperative may activate, not promises it must keep.</p>
+
+<h3>The activation rule</h3>
+
+<p>No phase activates by founder decision or staff decision. Each phase requires the Board to vote that the cooperative has cleared the prerequisite milestones, with the Council issuing a non-binding readiness opinion before the vote. Members are notified at least ninety days before each activation and have standing to call a referendum if they object. The phases are graduations the cooperative chooses, not levels the founders impose.</p>
+
+<hr>
+
+<h2>Governance of the Designers</h2>
+
+<p>Every system has people who designed it. Pretending otherwise is the trick most cult-shaped systems use. This one names them.</p>
+
+<p>This document was authored by Cameron Moir in Brisbane, Australia. The Universal Moral Baseline that grounds it was developed by the same author across many drafts, with reference to philosophical, ethical, and legal traditions, including religious traditions treated as sources of human moral reasoning rather than as sources of binding authority over the system. The 117 worldview list was drawn up by the author in consultation with experts in many of those traditions, with explicit gaps acknowledged and a process for adding traditions over time. The starting karma weights were chosen by the author and are amendable through the standard governance threshold from day one.</p>
+
+<p>The author has no special status in the running system. No founder's keys. No reserved identity tokens. No vote that counts more than anyone else's. No ability to override the kill switch. No right to amend the Articles without the same supermajority every other amendment requires. The membership terms for the author are identical to the membership terms for everyone else.</p>
+
+<p>What stops the author from being the unspoken centre of authority anyway: open source code that anyone can fork, public deliberation on every governance change, term-limited Board elected by the population without vetting, and a network of human practitioners maintaining the worldview interpretations independent of any individual.</p>
+
+<p>What does not stop it: the author's continuing influence on direction during the early years, their proximity to the Council formation, their visibility in the community. These are real. They diminish over time as the system matures, by design. They do not disappear immediately.</p>
+
+<p>A system claiming sovereignty for its members while concealing the influence of its designers would be lying. This system does not. The designers are named, their leverage is named, the mechanisms that diminish their leverage are named. After the first five years of operation the author commits to publish a public review of how much influence remained, conducted by independent reviewers chosen by the membership through the same threshold that elects the Board.</p>
+
+<p>If at any point the membership concludes the designers retain disproportionate influence, the corrective mechanisms above are available, and so is the kill switch.</p>
+
+<hr>
+
+<h2>Adversarial Scale</h2>
+
+<p>A document that does not engage with attack scenarios is wishful thinking. The list below is not exhaustive. The point is that the system's response is structured, graduated, and named, rather than improvised under pressure.</p>
+
+<p><strong>State hostility.</strong> A government bans Shukinkara, blocks the kiosks, criminalises identity token issuance. Mitigation: open source, peer-to-peer, jurisdiction-agnostic at the ledger layer. People in hostile jurisdictions can run the software unofficially. Kiosks move. The reserve relocates if needed. The Articles hold across borders even when legal recognition does not.</p>
+
+<p><strong>State capture.</strong> A government compels its citizens to enrol with state-controlled biometrics, demands all activity be visible. Mitigation: the identity token contract enforces non-transferability and biometric uniqueness against external compulsion. Coerced enrolment is detectable through abnormal biometric clusters and consent patterns. The Council can mark such enrolments as compromised, suspending their economic activity until the coercion is investigated. The state cannot read inside Hiveminds without breaking the encryption. The system is not invulnerable to state capture; it is hardened against it.</p>
+
+<p><strong>Mass hijack.</strong> Ten million accounts compromised through coordinated phishing or device theft. Mitigation: social recovery via guardians flags inconsistent recovery patterns. The Council can freeze suspect accounts pending verification. Karma changes during the suspect window are reversible. The kill switch is not pulled for fraud; conventional weapons handle it.</p>
+
+<p><strong>Coordinated bilateral fraud.</strong> Pairs of cooperating Hiveminds report and confirm interactions that did not happen. Mitigation: cross-Hivemind anomaly detection at the network layer flags reciprocal patterns. Karma generated by colluding pairs is suspect by default. Audit triggers on volume thresholds. The Council investigates and revokes fraudulent gains.</p>
+
+<p><strong>Sybil attack at biometric.</strong> Synthetic biometrics, deepfaked irises, fingerprints reconstructed from leaked databases. Mitigation: liveness checks at issuance, multi-modal biometric verification, periodic re-verification at random intervals. The arms race is real. The system commits to staying ahead by funding biometric research from the reserve.</p>
+
+<p><strong>Fork wars.</strong> Two communities disagree on a fundamental amendment. Both fork. Mitigation: the branch fork mechanism handles this. The metal is divided proportionally. Both forks continue.</p>
+
+<p><strong>Internal capture by AI Council members.</strong> Mitigation: cap enforced at minting, divergence detection runs at runtime, Board obliged to act before drift becomes capture.</p>
+
+<p><strong>Designer betrayal.</strong> The author or original developers attempt to insert backdoors. Mitigation: open source, on-chain governance, the corrective mechanisms above, the kill switch. Any attempt to acquire special privileges would itself violate the Articles.</p>
+
+<p><strong>MEV against identity token state changes.</strong> Searcher bots front-run karma settlements, basic-income claims, or guardian-recovery transactions. Mitigation: encrypted mempools at the settlement layer, commit-reveal on karma writes, threshold-decryption ordering by the validator set so transaction order is not auctionable. Identity token state changes carry a 12-block finality buffer with reorg-aware reversal of any extracted value back to the original signer.</p>
+
+<p><strong>Governance proposal flooding.</strong> A motivated faction submits thousands of proposals per epoch to drown out genuine debate. Mitigation: quadratic submission cost in karma, per-author rate limits, and a Council-side triage gate that batches near-duplicate proposals into a single referendum. Spam attempts cost karma; the karma is burned, not refunded.</p>
+
+<p><strong>Sybil-via-bribery.</strong> An attacker rents real verified humans rather than synthesising fakes - paying people in low-income regions to enrol, hand over their identity-token signing rights, and vote a particular way. Mitigation: behavioural drift detection on long-tail interaction patterns, mandatory re-liveness on high-stakes votes, and karma-weighted (not headcount-weighted) governance for amendments above the supermajority threshold. Rented identities also forfeit the Right of Exit if the rental is proven, since the holder did not freely enter.</p>
+
+<p><strong>Regional VRF manipulation.</strong> The randomness beacon used for jury selection is biased through validator collusion or oracle compromise in a single region. Mitigation: drand-style threshold randomness aggregated across at least seven geographically separate beacon committees, with a public bias-detection dashboard and automatic exclusion of any committee whose output diverges from the aggregate beyond a statistical floor.</p>
+
+<p><strong>AI Council prompt injection.</strong> Malicious payloads embedded in evidence packets, appeals, or community submissions attempt to coerce a Council member's reasoning. Mitigation: structured-only inputs at the Council interface, output-side cross-validation between the Twelve where any divergence above a threshold flags the inputs for human jury review, and read-only sandboxed retrieval that cannot be steered by submission content.</p>
+
+<h3>Incident response</h3>
+
+<p>Active attacks are handled by the <strong>Shukinkara Incident Response Team</strong> (SIRT). SIRT is a standing seven-person rotation drawn from the Council's security committee plus three external researchers on retainer. Authority to invoke graduated response sits with SIRT during the first 24 hours of an incident; authority to escalate to a full network pause sits with the Board.</p>
+
+<p>The response timeline is fixed. Within 15 minutes of confirmation, SIRT publishes a signed acknowledgement to the public status feed. Within 1 hour, the affected component is either patched or quarantined, and the user-facing communication channel carries a plain-language summary of what is known and what is not. Within 24 hours, a preliminary technical writeup is public. Within 14 days, a full post-incident review is published, signed by SIRT and counter-signed by an external auditor.</p>
+
+<p>Recovery follows the principle that economic state can be rolled back, but consent and identity cannot. Karma transactions inside a confirmed exploit window are reversible by Board vote. Identity token issuance is never silently reversed; compromised tokens are flagged and offered re-enrolment under guardian witness.</p>
+
+<h3>Bug bounty</h3>
+
+<p>The bounty programme is permanent, funded directly from the reserve, and disclosed in full on the public site. Scope covers the identity token contracts, the governance contracts, the kiosk firmware, the Hivemind runtime, the agent pipelines of the 117, the kill switch protocol, and any first-party mobile or web client. Out of scope: third-party forks, social engineering of named individuals, and physical attacks on staff.</p>
+
+<p>Reward tiers are paid in KARA. Critical (loss of funds, loss of identity uniqueness, kill switch bypass): 100,000 to 500,000 units. High (privilege escalation, governance manipulation, karma forgery at scale): 25,000 to 100,000 units. Medium (information disclosure, denial of service against a single Hivemind): 5,000 to 25,000 units. Low (configuration weakness, hardening suggestion): 500 to 5,000 units.</p>
+
+<p>Disclosure is coordinated. Researchers report through a published PGP-encrypted channel and receive a written response within 72 hours. The default embargo is 90 days from triage or until a fix is shipped, whichever is sooner. Researchers retain the right to publish after the embargo expires regardless of fix status. SIRT will not pursue legal action against good-faith research conducted within scope. Bad-faith submissions, extortion, or active exploitation forfeit the bounty and are referred to the relevant authorities.</p>
+
+<hr>
+
+<h2>Statistical Guarantees, Audit Cadence, and Verifiable Randomness</h2>
+
+<h3>Bilateral verification - acceptable error rates</h3>
+
+<p>The bilateral verification layer commits to bounded error rates rather than perfection. The system targets a Type I (false-positive) rate of no more than 1.0% and a Type II (false-negative) rate of no more than 2.5% on adjudicated outcomes, measured against a rolling sample of jury-overturned decisions. These ceilings are not aspirational. If either rate exceeds threshold across a calendar quarter, the affected verification module is suspended, decisions made under it are flagged for re-review, and the operator who deployed it loses karma proportional to the breach. Detection runs continuously through a shadow-jury pipeline: 0.5% of verifications are silently re-routed to an independent jury whose verdict is compared against the production verdict. Disagreement above the agreed confidence interval (Wilson 95%) trips an automatic review.</p>
+
+<h3>Audit cycle and auditors</h3>
+
+<p>Audits run on three overlapping cadences. Continuous machine-driven audits stream over every karma transaction, vote, and payout in real time, with anomalies surfaced to the public anomaly board within 60 seconds. Quarterly external audits are conducted by a rotating panel of three firms drawn from a pre-approved list: one Big Four firm (PwC, Deloitte, EY, or KPMG) for financial controls, one specialist crypto-native firm (Trail of Bits, Least Authority, or OpenZeppelin) for smart-contract and cryptographic review, and one independent statistical auditor (academic or commercial) for error-rate and sampling integrity. No firm may audit two consecutive quarters in the same role. Annual full-stack audits combine the three streams into a single public report. All audit reports are published verbatim within 30 days of receipt.</p>
+
+<h3>Random selection - verifiable, not just random</h3>
+
+<p>Jury draws and any other randomness-dependent process use a Verifiable Random Function (VRF) seeded by a distributed key generation (DKG) ceremony. The VRF is drand-compatible (BLS12-381 curve, threshold 2/3 of validator set) so every draw produces a publicly checkable proof. The karma-weighted pool is sampled by ordering members on a Merkle tree weighted by karma stake, then drawing indices from the VRF output. Anyone can verify, after the fact, that the twelve members chosen were the twelve the VRF actually selected. The DKG ceremony is re-run every six months with rotating validator membership to prevent long-running key compromise.</p>
+
+<h3>Aggregation privacy</h3>
+
+<p>Privacy-preserving aggregations are protected against query-based reconstruction by an enforced differential-privacy budget. Each aggregation endpoint operates with &epsilon; &le; 1.0 per query and a cumulative &epsilon; &le; 8.0 per analyst per calendar month, after which further queries return cached results or are denied. Every query is logged to an append-only audit trail visible to any karma-holder above a stated threshold. Queries that would isolate fewer than k=25 distinct subjects are rejected outright.</p>
+
+<h3>What the system guarantees, explicitly</h3>
+
+<p>Shukinkara guarantees the following and nothing beyond it: bounded and continuously measured verification error rates; cryptographically verifiable randomness for every juror draw; published external audit reports on a fixed cadence with rotating auditors; per-analyst differential-privacy budgets with public audit trails on aggregations. The system does not guarantee zero error, zero collusion, or zero bias. It guarantees that error, collusion, and bias are bounded, measured, and visible.</p>
+
+<hr>
+
+<h2>Regulatory Engagement Strategy</h2>
+
+<p>A system that touches identity, money, and a precious metal reserve will be read by financial regulators whether it asks to be read or not. The choice is whether to engage on the front foot or wait for the letter. Shukinkara engages on the front foot, but selectively, and refuses to pretend the engagement will go the same way in every jurisdiction.</p>
+
+<p><strong>Proactive engagement.</strong> The MAS in Singapore and the FCA in the United Kingdom get the first conversation. Both run sandbox programmes designed exactly for systems that don't fit existing categories. Both have shown they can hold a discussion about novel financial structures without reflexively reaching for the enforcement file. The cooperative lodges its model with both before it onboards a single member in either jurisdiction. The RBA and AUSTRAC in Australia get the same treatment for the same reason - the home base has to be on the record. The Bundesbank gets a structured briefing because German regulators tend to escalate hard when surprised, and a surprised Bundesbank is a closed Bundesbank.</p>
+
+<p><strong>Reactive engagement.</strong> The SEC in the United States gets nothing until it asks. American securities law applies the Howey test to almost anything that looks like a stake in a common enterprise expecting profit, and the identity token plus reserve plus karma multiplier is a textbook invitation to that test. Walking into the SEC voluntarily is walking into a registration requirement that the system cannot meet without becoming a different system. The cooperative complies with American law by not soliciting American members until a workable position exists, and engages only when contacted. This is not evasion. It is the honest acknowledgment that the United States is the hardest jurisdiction in the world for what Shukinkara is.</p>
+
+<p><strong>Central bank objections.</strong> Central banks will read a metal-backed token issuing basic income as a private currency competing with sovereign fiat. They are not wrong about the shape. They are wrong about the threat. The token does not circulate as a medium of exchange in the open economy. It is not pegged to fiat. It is not used to pay rent or buy groceries except by holders who choose to convert. It is a stake in a closed reserve, redeemable on exit. The closer analogy is a mutual or a credit union holding member equity than a parallel currency.</p>
+
+<p><strong>Licensing the system seeks.</strong> An e-money licence in the EU under the EMD2 framework, sought through Lithuania or Ireland depending on Council guidance. A payment institution licence where the local regime offers one with manageable capital requirements. A trust company structure to hold the metal reserve, sited in a jurisdiction with a serious trust law tradition. Singapore, Switzerland, and Jersey are all candidates.</p>
+
+<p><strong>Licensing the system avoids.</strong> Banking licences. Securities dealer registrations. Money transmitter licences in the fifty American states individually. Anything that requires the system to KYC every member against state-issued ID, because state-issued ID is the surveillance rail the cooperative exists to route around.</p>
+
+<p><strong>State political response.</strong> Welcomed in jurisdictions where basic income is already politically live - parts of Scandinavia, the Netherlands, Spain, parts of Canada. Tolerated in jurisdictions with strong digital rights traditions but soft on private currency - Estonia, Switzerland, Singapore at the margin. Fought in jurisdictions where state benefits are politically loaded and any competing income source is read as an attack on the welfare contract. Refused in jurisdictions that mandate state-controlled biometric KYC integration as a condition of operation - China, Russia, the Gulf states, anywhere with a social credit framework already in place. The cooperative does not enter those jurisdictions, full stop, because the entry would breach the second Article on the way in the door.</p>
+
+<p><strong>Graceful retreat.</strong> If a major jurisdiction goes hostile after the system is operating there, the response is staged and public. First, suspension of new entry in that jurisdiction. Second, suspension of basic income flows to existing holders in that jurisdiction, with reserve credit preserved on chain. Third, public notice to holders of a wind-down window during which they can move their identity token off the affected jurisdiction's infrastructure or accept dormant status. Fourth, full withdrawal of any kiosks, partners, or operational footprint. The reserve metal does not move under duress. The historical lesson from Liberty Reserve and e-gold is that the founders who stayed and fought lost everything. The cooperative retreats early, retreats publicly, and leaves the door open for return when conditions change.</p>
+
+<hr>
+
+<h2>Legal and Regulatory</h2>
+
+<p>A document that promises member sovereignty without naming the law it operates inside is a leaflet, not an agreement. This section names the law, the conflicts, and the engineering choices that resolve them. Where law forbids what the architecture wants, the architecture bends. The Articles do not.</p>
+
+<h3>Operating entities and jurisdictions</h3>
+
+<p>The reserve and the protocol stewardship sit inside a Cayman Islands foundation company, with a Swiss <em>Verein</em> holding the Articles and the Bill of Digital Rights as inalienable charter. Cayman handles the token and the metal. Switzerland handles the principles and the appeals of last resort. Neither entity has unilateral authority over a member's Hivemind. Both publish audited accounts annually.</p>
+
+<p>Per-jurisdiction posture is named explicitly. <strong>United States:</strong> identity tokens are not offered or sold to US persons in the launch phase. Earned karma-bound tokens are distributed under Regulation S to non-US persons, with a parallel Regulation D 506(c) accredited-investor lane for the reserve participation token only. <strong>European Union:</strong> the identity token is structured as a non-transferable utility credential outside MiCA's scope, while any tradeable reserve instrument is whitepapered as an asset-referenced token under MiCA Title III. <strong>United Kingdom:</strong> FCA financial promotions regime observed. <strong>India:</strong> 1% TDS and 30% gains treatment under section 115BBH apply at the point any value is realised in fiat. <strong>Australia:</strong> AUSTRAC registration as a Digital Currency Exchange where applicable, ASIC engagement on the financial-product question. <strong>Brazil:</strong> Lei 14.478/2022 compliance through a registered VASP partner; LGPD treated as functionally equivalent to GDPR for biometric handling.</p>
+
+<h3>Securities classification</h3>
+
+<p>The identity token itself is non-transferable, biometrically bound, and confers no expectation of profit from the efforts of others. It is a credential, not a security. The reserve participation token is a different instrument, and the system does not pretend otherwise. It is treated as a security wherever a reasonable regulator would. Offerings are exempt (Reg S, Reg D 506(c), MiCA-whitepapered) or registered. Utility-token framing is not used as a shield where the economics say security. The system relies on jurisdictional structuring and exemption compliance, not rhetoric.</p>
+
+<h3>Biometric compliance and the right to erasure</h3>
+
+<p>A naive read of biometric uniqueness would suggest retaining biometric hashes after exit to block re-entry. That conflicts with GDPR Article 17, Illinois BIPA retention limits, Texas CUBI, and the EU AI Act's biometric categorisation rules. So the system uses a different mechanism.</p>
+
+<p>On exit, all biometric material held by the system is destroyed within thirty days, and a destruction certificate is signed and published to the member's audit log. Sybil resistance after exit is preserved through a zero-knowledge proof of non-duplication. At entry, the member generates a single-use commitment from their biometric on their own device. The commitment is added to a global Merkle accumulator. Re-enrolment requires producing a fresh proof that the new biometric does not match any commitment in the accumulator, without revealing which commitment, and without the system ever holding a hash that maps back to a person. The accumulator stores nullifiers, not biometrics. Right to Erasure removes the member's data. The nullifier persists as a mathematical fact, not personal data, and stays compatible with EDPB guidance on irreversibly anonymised information.</p>
+
+<p>Consent for biometric capture meets the highest applicable bar. BIPA-grade written informed consent at the kiosk, retention schedule disclosed, third-party sharing disclosed, audit rights granted, and the consent record itself stored under the member's key. CUBI and the EU AI Act's Article 5 prohibitions on real-time public biometric identification are respected by design.</p>
+
+<h3>AML, KYC, and sanctions</h3>
+
+<p>Tiered KYC scales with economic exposure. Tier 0, the Hivemind credential and karma score, requires biometric uniqueness only. Tier 1, basic income receipt up to a low monthly threshold, requires basic identity verification. Tier 2, reserve participation and any cross-border movement above the FATF Travel Rule threshold of USD/EUR 1,000, requires full KYC including source of funds. Sanctions screening against OFAC, EU, UN, and HMT lists runs at every tier transition and at every reserve interaction. The Travel Rule is satisfied through a registered VASP partner that handles originator and beneficiary information for cross-border transfers; the protocol itself never transmits cleartext PII between jurisdictions.</p>
+
+<h3>Basic income and banking regulation</h3>
+
+<p>Basic income as drafted resembled a deposit-like product, which would trigger banking licensure in most jurisdictions. The corrected design pays it as a non-custodial, non-interest-bearing distribution from the foundation's reserve to the member's self-custodied wallet. The foundation never holds member funds. Distributions are rev-share from licensing income, not yield on deposits. Where a jurisdiction still classifies this as a deposit or e-money product, the system either partners with a licensed institution or pauses basic income in country until the structure is adjusted.</p>
+
+<h3>Liability and dispute resolution</h3>
+
+<p>When a Council interpretation, a member jury verdict, or a smart contract execution causes harm, the responsible legal person is the Cayman foundation. The foundation carries professional indemnity, technology errors and omissions, and directors and officers cover, with aggregate limits published annually. Members have three sequential remedies. First, internal appeal to a higher-tier jury. Second, mediation under the Singapore International Mediation Centre rules. Third, binding arbitration seated in Singapore under SIAC rules, with a published carve-out preserving consumer rights to local courts where such waiver is unenforceable. Class action waivers are not asserted in jurisdictions that void them.</p>
+
+<h3>Consumer protection</h3>
+
+<p>Where the membership agreement might otherwise read as "irrevocable" - a word EU, UK, and Australian consumer law often voids - it is written to be revocable on the member side wherever local law requires, and the system absorbs the operational cost of that asymmetry. Cooling-off periods are honoured. The Right to Exit cannot be contracted away. Mandatory statutory rights override anything in this document. If a clause here is unenforceable in the member's jurisdiction, the clause fails and the rest of the agreement continues. That is stated plainly so no member has to read it out of the small print.</p>
+
+<p>The agreement is binding where law allows it to be binding, and yields where law requires it to yield. The Articles hold either way.</p>
+
+<hr>
+
+<h2>The Endpoint</h2>
+
+<p>Most systems hide the question of when they have succeeded. Shukinkara names it.</p>
+
+<p>Shukinkara succeeds when most members find it does what was promised. Pays them honestly for what they choose to share. Gives them a sovereign AI that serves them. Holds value steady against a world that prints it. Runs on principles that hold under stress. Lets people leave on their own terms, redeem on their own terms, and pass it to their heirs on their own terms.</p>
+
+<p>Shukinkara stops growing when it has reached the population the reserve can sustain at the agreed basic income level. After that, new entry continues at the rate the system can support, no faster. Growth into new territory is voluntary, requested by the territory, not pushed by the system.</p>
+
+<p>Shukinkara fails when the conditions named above become true. At that point, the Board is obliged to vote on the kill switch. Whether they vote yes or no, the question must be asked.</p>
+
+<h3>What is actually likely</h3>
+
+<p>Success and failure are the bookends. Between them sits the most likely first-decade outcome, which the document should name out loud.</p>
+
+<p>If Shukinkara works at all, the realistic first decade is a few thousand committed members. Technical experiments that survive in some places and die in others. Regulatory friction in jurisdictions that are paying attention. Cooperative drift toward the problems every successful cooperative has handled for the last two centuries - politics on the board, treasury debates, member apathy in good times, member panic in bad ones. A handful of forks where communities took the architecture and ran it differently. Audit findings that change the protocol. A few public failures that get patched. A slow accumulation of operational scar tissue.</p>
+
+<p>That outcome is fine. The ambition is the destination, not the launch metric. Reaching millions, sustaining a transformative basic income, redrawing the AI economy - these are decade-plus targets and they will not be met by the first cohort. The first cohort's job is to prove the architecture survives contact with reality, build the operational pattern, and leave a working system for the cohort that follows.</p>
+
+<p>If after a decade the cooperative has thousands of members earning a modest income, holding their own AI gateways, governing a working reserve, and shipping software that does what it claims, the experiment has worked. The scale comes after, or it does not come, and either way the people inside the first decade will have built something that did not exist before.</p>
+
+<p>There is no Shukinkara forever. There is Shukinkara for as long as the agreement holds, and a clear way out the moment it does not.</p>
+
+<hr>
+
+<h2>Constitutional Status and Founding</h2>
+
+<p>This document calls itself a kind of constitution. That word is borrowed, and the borrowing has to be defended. A real constitution rests on a founding act - a moment when a defined people, through a recognised process, brought a polity into being and bound themselves to its terms. Shukinkara has not had that moment. Pretending otherwise would corrupt the rest of the doc.</p>
+
+<p>What this is, honestly: a founder draft of a cooperative agreement, authored by Cameron Moir in Brisbane in 2026, offered to anyone who chooses to enter. It is constitutional in form for the cooperative it founds. It is contractual in legitimacy until ratified. The difference matters.</p>
+
+<h3>The founding process</h3>
+
+<p>Shukinkara enters force in three stages.</p>
+
+<p><strong>Stage one: founder draft.</strong> This document. Authored by one person, published openly, offered without restriction. It binds nobody. Anyone who reads it owes it nothing.</p>
+
+<p><strong>Stage two: provisional period.</strong> The first ten thousand identity tokens issued operate under provisional terms. Every clause is in force, but no clause is yet entrenched. The Board is not yet seated. The Council of 117 is not yet seated. A standing Constitutional Convention - drawn at random from the issued identity tokens, paid in karma, sitting for fixed terms - reviews the draft article by article and proposes amendments by simple majority. The convention's output is the ratification text.</p>
+
+<p><strong>Stage three: ratification.</strong> The ratification text is put to every active identity token holder. A two-thirds vote with at least 60% turnout adopts it. Below that threshold, the convention reconvenes and revises. Adoption seats the Board and the Council. Only after ratification does the document become a cooperative charter in any sense the word can carry without lying.</p>
+
+<h3>Amendment after ratification</h3>
+
+<p>The amendment regime after ratification is graded.</p>
+
+<p><strong>Ordinary articles</strong> - karma weights, governance procedure, technical specifications - amend at 60% of active tokens with 50% turnout, on the standard cycle.</p>
+
+<p><strong>Structural articles</strong> - the layered governance, the AI cap, the reserve mechanism, the kill switch protocol - amend at 75% of active tokens with 60% turnout, plus a one-year ratification waiting period during which the amendment is published and debated before vote.</p>
+
+<p><strong>Entrenched articles</strong> - the fourteen Articles and the five Digital Rights - amend at 85% of active tokens, 70% turnout, plus a two-year waiting period, plus confirmation by a fresh Constitutional Convention drawn after the waiting period closes. They cannot be entrenched harder than that without becoming a contractual lock-in pretending to be a constitution.</p>
+
+<h3>Relationship to existing law</h3>
+
+<p>Shukinkara is sub-constitutional and parallel. It does not claim sovereignty over its members in the sense that nation-states do. It does not override their existing constitutions. It does not exempt them from criminal law, tax law, family law, or any other obligation they live under. Where a member's national constitution forbids something Shukinkara permits, the national constitution wins. Where Shukinkara forbids something a national jurisdiction permits, the member chooses whether to remain in Shukinkara on Shukinkara's terms.</p>
+
+<p>The agreement binds inside the cooperative. Outside it, the world the member already lives in continues to govern.</p>
+
+<h3>Entrenchment theory</h3>
+
+<p>The theory is procedural rather than absolute. Nothing in this document binds future generations against their will. Every entrenched clause is amendable on terms that are difficult but not impossible, costly but not foreclosed. The supermajority and waiting period exist to slow change, not to forbid it. A future generation that genuinely wants to amend the Articles can. They will have to want it badly enough to organise across years and tiers. That is the right amount of friction for a founding text. Anything tighter is a hand from the past pretending to be law.</p>
+
+<hr>
+
+<h2>The Bill of Digital Rights</h2>
+
+<p>Five rights are entrenched. They are not immutable - this document does not pretend any human-authored text is. They are entrenched at the highest tier the amendment regime above provides: 85% of active tokens, 70% turnout, two-year waiting period, fresh Constitutional Convention confirmation. They are derivatives of the Articles, applied to digital existence. They bind the system as it operates today and bind any successor who claims continuity with it.</p>
+
+<ol>
+<li><strong>Right to Transparency.</strong> You see every use of your data, every change to your status, every decision affecting you, in plain language, in real time.</li>
+<li><strong>Right to Exit.</strong> You can leave the system. Your data leaves with you, deleted on your terms. Re-entry is constrained by biometric uniqueness preserved through zero-knowledge proof of non-duplication.</li>
+<li><strong>Right to Representation.</strong> No major change to the system happens without proposal, debate, and vote. No founder, no council member, no government can override that.</li>
+<li><strong>Right to Redemption.</strong> Every penalty is appealable. Every termination is reviewable. Nobody is permanently defined by their worst day.</li>
+<li><strong>Right to Privacy.</strong> Your data is opt-in, reversible, and yours. Withdrawal of consent halts forward use. Statistical privacy over the ledger is unconditional and bounded by a fixed differential privacy budget. Record-level privacy is conditional on the bilateral verification window declared in the Consent section, and not a moment longer.</li>
+</ol>
+
+<hr>
+
+<h2>The Open Door</h2>
+
+<p>Shukinkara is not built for the people who already have everything. The system is designed to be reachable by anyone with a phone, in any language, in any region. If the cooperative works at all, it should work for the people who have been most exploited by the systems it replaces. That ambition cuts both ways. A system that arrives in a place it does not understand, on terms it has set in advance, is the thing it claims to oppose. So entry has to be slower and more accountable than the marketing instinct wants it to be.</p>
+
+<p><strong>Structured engagement, not "communities request the system".</strong> Communities are not unitary. Whoever speaks first is usually whoever has English, internet access, and a relationship with an NGO. Treating that voice as the community's voice is how extraction has always begun. So Shukinkara does not arrive on a single request. Engagement opens through a multi-stakeholder process: at minimum a women's organisation, a youth body, a workers' or smallholders' association, a council of elders or traditional authority, and an independent local researcher paid for the work. Local partners are selected through public expression of interest, not by the project picking favourites. Each stakeholder group has the right to refuse, the right to pause, and the right to a public explanation of why a rollout is happening at all. No rollout proceeds without standing approval from all five. A withdrawal by any one of them halts new onboarding while the dispute is heard.</p>
+
+<p><strong>Biometric exclusion is assumed, not edge-cased.</strong> Aadhaar showed what happens when biometric uniqueness is treated as universal: manual labourers with worn fingerprints, elders with cataracts, amputees, and people whose irises do not read are denied food rations they are legally entitled to. Shukinkara has to assume the same failure modes from day one. Every onboarding flow has alternative entry paths. Multi-modal capture combines fingerprint, iris, face, and voice, and a person passes if any sufficient combination matches - not all of them. Where no biometric path works, a human review panel drawn from the local stakeholder bodies can vouch in person, on record, with a time-bound provisional identity token that converts to permanent after a second independent vouch. No-one is turned away because the sensor failed. The exclusion rate is published per region, broken down by age, gender, and occupation, and a region with a rising exclusion rate triggers automatic review.</p>
+
+<p><strong>Spendability is the test, not the wallet.</strong> Basic income denominated in a token nobody can spend is a debt the system pretends to have paid. Local fiat conversion is treated as core infrastructure, not a partner problem. Before a region opens, Shukinkara establishes settlement paths through licenced mobile money operators, local exchanges, cooperative banks, and where regulation permits, direct fiat off-ramps at agent networks already serving the area. Liquidity providers are vetted, capped, and rotated so no one operator becomes a chokepoint. Recipients can choose to receive basic income directly into mobile money, into a local-currency account, into the identity token wallet, or split across them. If conversion fails in a region for more than seven days, basic income is paid in local fiat through the partner network until it is restored, and the failure is logged publicly.</p>
+
+<p><strong>Governance held by the people inside it.</strong> Each region elects a caucus through its stakeholder bodies. Caucuses hold rotating seats on the global Council, with quotas that prevent any single region or language from dominating. A regional caucus has unconditional veto over rollout, expansion, and sunset in its own territory. Translation of governance materials is paid work performed by local speakers, not scraped from the internet, and the translation itself is open to challenge by the caucus. Indigenous knowledge is never represented through AI summary. Where it appears in the system, it appears as the words of the people who hold it, under their own names and their own conditions of use, with the right to withdraw.</p>
+
+<p><strong>Why this is not extraction with consent.</strong> Extraction with consent is the standard pattern: arrive with a finished product, find a local face to bless it, harvest the data, leave when the unit economics turn. Shukinkara fails that test in four specific ways. The architecture is open source, so a region can fork it and run it without us. The identity token is portable and the right to exit is real, so members are not captured. Governance veto sits with the caucus, not the project, so a region can stop a rollout the founders want. And the project earns nothing per member. There is no extraction surface to optimise. None of that makes the post-colonial critique go away. The Japanese name on a global system, the English-language doc, the founder in Brisbane - these are real asymmetries and the document does not pretend otherwise. What it offers instead is a structure where the asymmetries can be named, contested, and unwound by the people they affect, on a timeline they set. The door is open. Whether to walk through it is not our decision to make.</p>
+
+<hr>
+
+<h2>Open Source</h2>
+
+<p>Shukinkara is fully open source. Not just the code. The entire architecture.</p>
+
+<p>The Hivemind.AI-OS specification. The identity token contracts. The membership terms. The agent prompts and research pipelines of the 117. The karma mechanics. The governance contracts. The kill switch protocol. The Articles themselves. All of it is public, forkable, and subject to the same scrutiny as everything else in the system.</p>
+
+<p>A system built on total transparency that was itself closed source would be a lie. The code is as witnessed as the people inside it.</p>
+
+<p>This document is the founding draft that every fork must reckon with. Anyone who takes the architecture and corrupts it does so in full view of what they are departing from.</p>
+
+<hr>
+
+<h2>The Name, Again</h2>
+
+<div style="text-align:center;margin:2rem 0">
+<div style="font-family:'Noto Serif JP',serif;font-size:2.5rem;font-weight:300;color:var(--gold);letter-spacing:0.2em;margin-bottom:1rem;">主金空</div>
+</div>
+
+<p><em>Shu</em> - sovereign.<br>
+<em>Kin</em> - gold, wealth.<br>
+<em>Kara</em> - empty vessel, potential.</p>
+
+<p>Sovereign wealth vessel.</p>
+
+<p>The identity token is reserve-backed sovereignty of identity. The karma system is conduct made legible. The Hivemind.AI-OS is the empty vessel each person fills with their own life. The fourteen Articles are the ground all of it stands on.</p>
+
+<p>The whole system originates from a single proposition: genuine human value should be anchored to something real and incorruptible, the gateway to your own life should belong to you, and no agreement worth signing asks you to give up your freedom to accept it.</p>
+
+<p>It was always going to be called that. We just needed to build enough of it to hear the name clearly.</p>
+
+        </div>
+
+        <div class="doc-byline">
+            <em>Cameron Moir</em><br>
+            Brisbane, Australia<br>
+            2026<br><br>
+            This document is released without restriction. Copy it, translate it, build from it.<br>
+            The only condition is that you do not lie about what it is.
+        </div>
+
+        <div class="doc-cta">
+            <p>If this resonates - get in touch.</p>
+            <a href="https://streamables.live/#contact" class="cta-link">Start a conversation</a>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>

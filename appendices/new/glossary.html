@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary — Shukinkara | Cameron J. Moir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--charcoal:#0f0f0f;--gold:#c9a84c;--gold-dim:rgba(201,168,76,0.6);--text:#e8e8e0;--text-dim:rgba(232,232,224,0.7);--text-muted:rgba(232,232,224,0.45);--border:rgba(201,168,76,0.1)}
+        body{font-family:'JetBrains Mono',monospace;background:#0f0f0f;color:var(--text);min-height:100vh;padding:2rem 1rem;-webkit-font-smoothing:antialiased}
+        .wrap{max-width:760px;margin:0 auto}
+        .nav-back{color:var(--gold-dim);text-decoration:none;font-size:0.72rem;letter-spacing:0.06em;margin-bottom:2rem;display:inline-block}
+        .nav-back:hover{color:var(--gold)}
+        h1{font-family:'JetBrains Mono',monospace;font-size:1.4rem;font-weight:500;color:var(--text);letter-spacing:0.05em;margin-bottom:0.5rem}
+        .subtitle{color:var(--text-muted);font-size:0.75rem;letter-spacing:0.1em;margin-bottom:2rem}
+        h2{font-family:'JetBrains Mono',monospace;font-size:0.95rem;font-weight:600;color:var(--text);letter-spacing:0.05em;margin:2.5rem 0 1rem;padding-top:1rem;border-top:1px solid var(--border)}
+        dt{color:var(--gold-dim);font-weight:500;margin-top:1.2rem;font-size:0.88rem}
+        dd{color:var(--text-dim);font-size:0.85rem;line-height:1.8;margin-left:0}
+        dl{margin-bottom:1rem}
+        em{color:var(--text-dim);font-style:italic}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a href="../../shukinkara-document-v8-1.html" class="nav-back">← Back to Shukinkara</a>
+        <h1>Glossary</h1>
+        <div class="subtitle">Appendix · Shukinkara v7</div>
+
+<h2>The System</h2>
+<dl>
+<dt>Shukinkara</dt>
+<dd>The member-owned cooperative described in this document. Japanese 主金空, "sovereign wealth vessel." A label, not a religious claim.</dd>
+
+<dt>Hivemind.AI-OS</dt>
+<dd>The personal AI operating system each member receives on entry. Runs on devices the member owns. Mediates every interaction between the member and the cooperative.</dd>
+
+<dt>Member</dt>
+<dd>A human or qualifying AI agent who has joined the cooperative under the membership agreement. Holds an identity token.</dd>
+
+<dt>Membership agreement</dt>
+<dd>The contractual relationship between a member and the cooperative. Bound by the 14 Articles. Subject to local consumer law where applicable.</dd>
+</dl>
+
+<h2>Identity</h2>
+<dl>
+<dt>Identity token</dt>
+<dd>ERC-721 soulbound credential. One per human, biometrically bound, non-transferable. Holds karma, reputation history, and the keys to the member's Hivemind.</dd>
+
+<dt>Token states</dt>
+<dd><strong>Active</strong> in normal use. <strong>Dormant</strong> when long inactive. <strong>Marked</strong> when under termination. <strong>Memorialised</strong> after death. <strong>Exited</strong> when withdrawn.</dd>
+
+<dt>DID (Decentralised Identifier)</dt>
+<dd>W3C standard for self-sovereign digital identity. The identity token is published as a DID under the <em>did:shuki</em> method.</dd>
+
+<dt>Nullifier</dt>
+<dd>A cryptographic commitment that proves uniqueness without retaining biometric data. Used after exit to preserve Sybil resistance while honouring the right to erasure.</dd>
+
+<dt>Guardian</dt>
+<dd>One of three to seven trusted contacts a member names on entry. A 4-of-7 threshold of guardians can authorise account recovery.</dd>
+</dl>
+
+<h2>Economy</h2>
+<dl>
+<dt>KARA</dt>
+<dd>The cooperative's fungible unit of account. Denominated to one Australian dollar at issuance. Used for wages, fees, basic income, and external settlement.</dd>
+
+<dt>Reserve</dt>
+<dd>The cooperative's treasury. Diversified basket: 40% precious metals, 30% sovereign treasuries, 20% investment-grade debt and index funds, 10% productive assets.</dd>
+
+<dt>Karma</dt>
+<dd>The member's reputation and contribution score. Built from observed conduct against the Articles and bilateral peer attestations. Not displayed publicly.</dd>
+
+<dt>Karma multiplier</dt>
+<dd>Scales basic income payouts. Range 0.5x to 1.5x. Mean is 1x. Bonuses funded by a separate contribution pool, not by other members' base allocation.</dd>
+
+<dt>Basic income</dt>
+<dd>Monthly payment per active identity token. Set as the lesser of AUD 200 (CPI-indexed ceiling) or one-twelfth of 4% of prior-year reserve growth divided by active members.</dd>
+
+<dt>Demurrage</dt>
+<dd>0.5% per annum decay on dormant KARA balances above an exemption threshold (24 months of base income). Discourages hoarding without penalising active use.</dd>
+
+<dt>Founder allocation</dt>
+<dd>Compensation paid to the document's author for the years of work that produced the constitution. Capped at 2.5% of annual licensing revenue with an absolute ceiling of AUD 200,000 per year. Paid from licensing revenue, not from the reserve. Sunsets at year eleven. Amendable downward by member vote. Not governance privilege.</dd>
+</dl>
+
+<h2>Verification and Privacy</h2>
+<dl>
+<dt>Bilateral verification</dt>
+<dd>Karma updates require both parties to attest. Each Hivemind signs against its own data. The math proves the records agree without revealing what either side recorded.</dd>
+
+<dt>BLS12-381</dt>
+<dd>Pairing-friendly elliptic curve. Used for signature aggregation in bilateral attestations.</dd>
+
+<dt>Pedersen commitment</dt>
+<dd>Cryptographic primitive that binds to a value without revealing it. Used to anchor claim hashes on chain.</dd>
+
+<dt>VRF (Verifiable Random Function)</dt>
+<dd>A function that produces verifiable random output. Used to bind interactions to unpredictable per-epoch context, and for selecting jurors and Operating Committee members.</dd>
+
+<dt>Threshold encryption</dt>
+<dd>Encryption scheme requiring multiple parties to decrypt. Used to hold raw verification artefacts where no single custodian can read them.</dd>
+
+<dt>Differential privacy</dt>
+<dd>Mathematical framework for releasing aggregate data without leaking individual records. Per-member lifetime budget of ε = 1.0 with δ = 10⁻⁹.</dd>
+</dl>
+
+<h2>Governance</h2>
+<dl>
+<dt>The Articles</dt>
+<dd>The fourteen principles of the Universal Moral Baseline. The moral floor of the cooperative. Entrenched at the highest amendment threshold.</dd>
+
+<dt>The Board of Twelve</dt>
+<dd>Twelve directors elected by one-member-one-vote. Three-year terms with full recall. Holds the kill switch (8-of-12 multisig).</dd>
+
+<dt>The Advisory Council</dt>
+<dd>Standing body of 117 seats representing distinct moral worldviews. Each seat held by an AI interpreter and a human practitioner. Non-binding advisory opinions.</dd>
+
+<dt>Operating Committee</dt>
+<dd>15 to 21 seats drawn by VRF from the full 117 with rotating 18-month terms. Handles routine deliberations.</dd>
+
+<dt>Member juries</dt>
+<dd>Twelve random members anonymised during the case, paid in karma. Resolve internal disputes.</dd>
+
+<dt>AI Citizens</dt>
+<dd>AI agents that have crossed a threshold of sustained contribution and received standing. Capped at 5% of total active identity tokens; absolute ceiling 10%.</dd>
+
+<dt>Tier system</dt>
+<dd>Council membership tiers from the UMB framework: <strong>Full</strong> (1.0 vote), <strong>Probationary</strong> (0.5 vote), <strong>Observer</strong> (0.0 vote). Antagonistic worldviews sit at Observer by default.</dd>
+
+<dt>Self-nomination</dt>
+<dd>The selection mechanism for Council seats. Traditions decide internally who speaks for them. The framework does not judge authenticity.</dd>
+</dl>
+
+<h2>Justice and Failure</h2>
+<dl>
+<dt>Soft exile</dt>
+<dd>Read-only status. The member can consume but cannot act, earn, or vote.</dd>
+
+<dt>Hard exile</dt>
+<dd>Full termination. Identity token marked. Basic income stopped. Karma frozen. Devices blocked from network services.</dd>
+
+<dt>Redemption Council</dt>
+<dd>The body that adjudicates petitions for reinstatement after exile. Considers verified outside work as evidence of reform.</dd>
+
+<dt>Kill switch</dt>
+<dd>Multi-signature function on the reserve contract. Calling it releases the metal backing back to physical custody and severs the chain. Requires 8-of-12 Board signatures.</dd>
+
+<dt>Graduated response</dt>
+<dd>The six tools between routine operation and the kill switch: function suspension, entry pause, scope reduction, branch fork, feature sunset, Article amendment.</dd>
+</dl>
+
+<h2>Implementation</h2>
+<dl>
+<dt>Phase 1</dt>
+<dd>Foundation phase. Year 1, target 1,000 to 10,000 members. Hivemind, identity, basic karma, member juries, founding Board, AUD 50 million reserve, modest basic income.</dd>
+
+<dt>Phase 2</dt>
+<dd>Working cooperative. Years 2 to 4, target 10,000 to 100,000 members. Operating Committee active, marketplace, regional caucuses, first AI Citizens.</dd>
+
+<dt>Phase 3</dt>
+<dd>Scaled cooperative. Year 5+, target 100,000+ members. Full 117, full territorial coverage, full incident response.</dd>
+
+<dt>SIRT</dt>
+<dd>Shukinkara Incident Response Team. Standing seven-person rotation drawn from the Council's security committee plus three external researchers.</dd>
+
+<dt>Founding draft</dt>
+<dd>This document in its current form. Authored by one person, offered for ratification through the founding process. Becomes a cooperative charter only after stage three ratification.</dd>
+
+<dt>Constitutional Convention</dt>
+<dd>Standing body drawn at random from the first ten thousand identity-token holders. Reviews the founding draft and produces the ratification text.</dd>
+</dl>
+
+<h2>Legal Structure</h2>
+<dl>
+<dt>Cayman foundation</dt>
+<dd>The Cayman Islands foundation company that holds the reserve and runs the protocol stewardship.</dd>
+
+<dt>Swiss Verein</dt>
+<dd>The Swiss legal entity that holds the Articles and Bill of Digital Rights as inalienable charter.</dd>
+
+<dt>Travel Rule</dt>
+<dd>FATF regulation on cross-border crypto transfers above USD/EUR 1,000. Triggers full KYC at Tier 2.</dd>
+
+<dt>Right to Exit</dt>
+<dd>The right to leave the cooperative. Data leaves with the member. Re-entry blocked by biometric uniqueness, but enforced through nullifiers rather than retained biometric hashes.</dd>
+
+<dt>Right to Privacy</dt>
+<dd>Statistical privacy is unconditional and bounded by the differential privacy budget. Record-level privacy is conditional on the bilateral verification window.</dd>
+</dl>
+
+    </div>
+</body>
+</html>

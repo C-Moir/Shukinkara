@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp/working files
+*.tmp
+*.bak
+*.log
+~$*
+
+# Drafts and notes (if any)
+NOTES.md
+DRAFT*.html
+*-draft.html
