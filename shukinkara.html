@@ -47,7 +47,7 @@
             --text-faint:rgba(232,232,224,0.3);
             --border:rgba(201,168,76,0.12);
         }
-        html,body{min-height:100%}
+        html,body{height:100%;overflow:hidden}
         body{
             font-family:'JetBrains Mono', monospace;
             background-color:var(--charcoal);
@@ -101,28 +101,28 @@
         .page{
             position:relative;
             z-index:1;
-            min-height:100vh;
+            height:100vh;
             display:flex;
             flex-direction:column;
             align-items:center;
             justify-content:center;
-            padding:4rem 2rem 3rem;
+            padding:3.25rem 2rem 2.25rem;
             gap:0;
         }
 
         /* Kanji hero */
         .kanji-hero{
             text-align:center;
-            margin-bottom:1.8rem;
+            margin-bottom:1rem;
         }
         .kanji{
             font-family:'Noto Serif JP', serif;
-            font-size:clamp(3.5rem, 10vw, 6.5rem);
+            font-size:clamp(2.6rem, 7.5vw, 4.6rem);
             font-weight:600;
             color:var(--gold);
             letter-spacing:0.2em;
             line-height:1;
-            margin-bottom:1rem;
+            margin-bottom:0.6rem;
             text-shadow:
                 0 0 40px rgba(201,168,76,0.5),
                 0 0 80px rgba(201,168,76,0.25),
@@ -133,7 +133,7 @@
             background-clip:text;
         }
         .romanji{
-            font-size:clamp(0.85rem, 2.5vw, 1.1rem);
+            font-size:clamp(0.75rem, 2vw, 0.95rem);
             font-weight:300;
             color:var(--text-dim);
             letter-spacing:0.3em;
@@ -146,22 +146,22 @@
             background:rgba(255,255,255,0.02);
             border:1px solid var(--border);
             border-radius:2px;
-            padding:1.4rem 2.5rem;
+            padding:0.85rem 2rem;
             max-width:600px;
             width:100%;
-            margin-bottom:1.6rem;
+            margin-bottom:1rem;
         }
         .def-row{
             display:flex;
             align-items:baseline;
             gap:1rem;
-            padding:0.6rem 0;
+            padding:0.35rem 0;
             border-bottom:1px solid rgba(201,168,76,0.07);
         }
         .def-row:last-child{border-bottom:none}
         .def-kanji{
             font-family:'Noto Serif JP', serif;
-            font-size:1.4rem;
+            font-size:1.2rem;
             font-weight:300;
             color:var(--gold);
             min-width:2rem;
@@ -171,25 +171,25 @@
         .def-content{
             display:flex;
             flex-direction:column;
-            gap:0.15rem;
+            gap:0.1rem;
         }
         .def-romaji{
-            font-size:0.75rem;
+            font-size:0.7rem;
             color:var(--gold-dim);
             letter-spacing:0.08em;
             font-weight:500;
         }
         .def-reading{
-            font-size:0.67rem;
+            font-size:0.62rem;
             color:var(--text-faint);
             letter-spacing:0.05em;
             font-style:italic;
         }
         .def-meaning{
-            font-size:0.78rem;
+            font-size:0.72rem;
             color:var(--text-dim);
             letter-spacing:0.02em;
-            line-height:1.4;
+            line-height:1.35;
         }
 
         /* Separator */
@@ -199,7 +199,7 @@
             gap:1.5rem;
             width:100%;
             max-width:600px;
-            margin-bottom:1.6rem;
+            margin-bottom:1rem;
         }
         .sep-line{flex:1;height:1px;background:var(--border)}
         .sep-glyph{
@@ -211,12 +211,12 @@
 
         /* Tagline */
         .tagline{
-            font-size:clamp(0.78rem, 1.8vw, 0.92rem);
+            font-size:clamp(0.74rem, 1.6vw, 0.85rem);
             color:var(--text-dim);
             text-align:center;
-            line-height:1.75;
+            line-height:1.65;
             max-width:480px;
-            margin-bottom:1.5rem;
+            margin-bottom:0.9rem;
             font-weight:300;
             letter-spacing:0.02em;
         }
@@ -227,17 +227,17 @@
 
         /* Pitch (what this actually is) */
         .pitch{
-            font-size:clamp(0.74rem, 1.6vw, 0.82rem);
+            font-size:clamp(0.7rem, 1.4vw, 0.78rem);
             color:var(--text-dim);
             text-align:center;
-            line-height:1.85;
+            line-height:1.6;
             max-width:560px;
-            margin-bottom:2rem;
+            margin-bottom:1.1rem;
             font-weight:300;
             letter-spacing:0.01em;
         }
         .pitch strong{color:var(--text);font-weight:500}
-        .pitch .pitch-coda{display:block;margin-top:0.85rem;color:var(--gold-dim);font-style:normal}
+        .pitch .pitch-coda{display:block;margin-top:0.5rem;color:var(--gold-dim);font-style:normal}
 
         /* CTA */
         .cta-group{
@@ -251,11 +251,11 @@
             color:var(--charcoal);
             background:var(--gold);
             text-decoration:none;
-            font-size:0.75rem;
+            font-size:0.72rem;
             font-family:'JetBrains Mono', monospace;
             letter-spacing:0.12em;
             text-transform:uppercase;
-            padding:0.75rem 2rem;
+            padding:0.65rem 1.75rem;
             border-radius:2px;
             transition:all 0.25s;
             font-weight:500;
@@ -277,19 +277,31 @@
         /* Footer */
         .page-footer{
             position:fixed;
-            bottom:1rem;
+            bottom:0.6rem;
             left:0;right:0;
             text-align:center;
-            font-size:0.6rem;
+            font-size:0.58rem;
             color:var(--text-faint);
             letter-spacing:0.08em;
             z-index:1;
         }
 
         @media(max-width:600px){
-            .definition-card{padding:1.75rem 1.5rem}
+            html,body{height:auto;overflow:auto}
+            .page{height:auto;min-height:100vh;padding:4rem 1.25rem 3rem}
+            .definition-card{padding:1.25rem 1.25rem}
             .site-nav{padding:1rem 1.25rem}
-            .page{padding:5rem 1.25rem 4rem}
+        }
+        @media(max-height:680px){
+            .kanji{font-size:clamp(2.2rem, 6vw, 3.4rem);margin-bottom:0.4rem}
+            .kanji-hero{margin-bottom:0.6rem}
+            .definition-card{padding:0.6rem 1.5rem;margin-bottom:0.7rem}
+            .def-row{padding:0.25rem 0}
+            .def-meaning{font-size:0.68rem;line-height:1.3}
+            .sep{margin-bottom:0.6rem}
+            .tagline{margin-bottom:0.6rem;line-height:1.5}
+            .pitch{margin-bottom:0.7rem;line-height:1.5}
+            .pitch .pitch-coda{margin-top:0.35rem}
         }
     </style>
 </head>
