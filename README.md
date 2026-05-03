@@ -4,7 +4,7 @@
 
 A member-owned cooperative grounded in fourteen articles, with Hivemind.AI-OS as the personal AI gateway each member receives.
 
-Authored by Cameron Moir, Brisbane, 2026.
+Authored by Cameron J. Moir, Brisbane, 2026.
 
 ## What is this repo
 
@@ -73,6 +73,6 @@ This document is released without restriction. Copy it, translate it, build from
 
 ## Contact
 
-Cameron Moir - Brisbane, Australia.
+Cameron J. Moir - Brisbane, Australia.
 
 [streamables.live](https://streamables.live)
