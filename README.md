@@ -1,5 +1,7 @@
 # Shukinkara
 
+https://c-moir.github.io/Shukinkara/shukinkara.html
+
 主金空 - sovereign wealth vessel.
 
 A member-owned cooperative grounded in fourteen articles, with Hivemind.AI-OS as the personal AI gateway each member receives.
